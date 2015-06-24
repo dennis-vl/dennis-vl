@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="VanLeeuwen.Projects.WebPortal.WebServices.DataTransferService" CodeBehind="DataTransfer.svc.cs" %>

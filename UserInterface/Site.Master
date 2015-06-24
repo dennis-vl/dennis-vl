@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="VanLeeuwen.Projects.WebPortal.UserInterface.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Customer Portal</title>
+    <asp:PlaceHolder runat="server">
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/MySkin/Menu.MySkin.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form runat="server">
+    <ajaxToolkit:ToolkitScriptManager runat="server">
+        <Scripts>
+            <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+            <%--Framework Scripts--%>
+            
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+            <asp:ScriptReference Name="WebForms.js" Path="~/Scripts/WebForms/WebForms.js" />
+            <asp:ScriptReference Name="WebUIValidation.js" Path="~/Scripts/WebForms/WebUIValidation.js" />
+            <asp:ScriptReference Name="MenuStandards.js" Path="~/Scripts/WebForms/MenuStandards.js" />
+            <asp:ScriptReference Name="GridView.js" Path="~/Scripts/WebForms/GridView.js" />
+            <asp:ScriptReference Name="DetailsView.js" Path="~/Scripts/WebForms/DetailsView.js" />
+            <asp:ScriptReference Name="TreeView.js" Path="~/Scripts/WebForms/TreeView.js" />
+            <asp:ScriptReference Name="WebParts.js" Path="~/Scripts/WebForms/WebParts.js" />
+            <asp:ScriptReference Name="Focus.js" Path="~/Scripts/WebForms/Focus.js" />
+            <asp:ScriptReference Name="WebFormsBundle" />
+            <%--Site Scripts--%>
+
+        </Scripts>
+    </ajaxToolkit:ToolkitScriptManager>
+    <header id="mainHeader">
+        <div id="portalTitle">
+            Van Leeuwen <asp:Literal ID="LiteralCertificates" runat="server" Text="<%$Resources:GlobalResource, Certificates %>" />
+        </div>
+        <asp:LoginView ID="LoginView1" runat="server">
+            <AnonymousTemplate>
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <telerik:RadMenu OnDataBound="RadMenuMain_DataBound" ID="RadMenuMain" runat="server" DataSourceID="RadSiteMapDataSource1" EnableEmbeddedSkins="False" Skin="MySkin" style="z-index:2900" />
+                <telerik:RadSiteMapDataSource ID="RadSiteMapDataSource1" runat="server" SiteMapFile="~/Web.sitemap" ShowStartingNode="False"  SiteMapProvider="AspNetXmlSiteMapProvider2"  />
+            </LoggedInTemplate>
+        </asp:LoginView>
+        <asp:Image ID="ImageVanLeeuwenLogo" runat="server" ImageUrl="~/Images/VL_logo_pos_fc_trans.png" />
+    </header>
+    <div id="redBar" >
+        <div id="divLanguage" class="colorWhite">
+            <telerik:RadDropDownList ID="RadDropDownListLanguage" runat="server" Width="55px" AutoPostBack="True" CausesValidation="False" OnSelectedIndexChanged="RadDropDownListLanguage_SelectedIndexChanged" />
+        </div>
+        <asp:LoginView ID="LoginView2" runat="server">
+            <AnonymousTemplate>
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <div id="loginBox" class="colorWhite">
+                    <asp:Literal ID="LiteralLoggedInAs" runat="server" Text="<%$Resources:GlobalResource, LoggedInAs %>" />
+                    <asp:LoginName ID="LoginNameMain" runat="server" CssClass="colorWhite" />
+                    |
+                    <asp:LoginStatus ID="LoginStatusMain" runat="server" OnLoggingOut="LoginStatusMain_LoggingOut" LogoutText="<%$Resources:GlobalResource, LogOut %>" CssClass="colorWhite" />
+                </div>
+            </LoggedInTemplate>
+        </asp:LoginView>
+
+        <asp:ContentPlaceHolder runat="server" ID="topPlaceHolder" />
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section>
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+    </footer>
+    </form>
+</body>
+</html>

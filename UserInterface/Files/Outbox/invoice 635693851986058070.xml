@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DocumentCached xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lines>
+    <DocumentLineCached>
+      <LineNum>1</LineNum>
+      <ItemCode>C</ItemCode>
+      <Quantity>100</Quantity>
+      <UnitOfMeasure>ST</UnitOfMeasure>
+      <Price>7.500000</Price>
+      <Currency>EUR</Currency>
+      <ShortText>100 ordered on 6/8/2015 6:33:18 PM.</ShortText>
+    </DocumentLineCached>
+  </Lines>
+  <CustomerCode>33085</CustomerCode>
+  <VLCompany>ZW01</VLCompany>
+  <DocDate>2015-06-08T18:33:18.5885862+02:00</DocDate>
+  <Comment>Certificate portal invoice</Comment>
+</DocumentCached>

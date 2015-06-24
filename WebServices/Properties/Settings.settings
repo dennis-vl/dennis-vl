@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VanLeeuwen.Projects.WebPortal.WebServices.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="XMLReceiveFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Test</Value>
+    </Setting>
+    <Setting Name="XMLInboxRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Test\Inbox</Value>
+    </Setting>
+    <Setting Name="LogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Test\Log</Value>
+    </Setting>
+    <Setting Name="XMLOutboxRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Test\Outbox</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,1350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 35.25, 50.125" name="DALPortal">
+  <DataContextMoniker Name="/DALPortalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3cba3f37-3c86-4c25-8ac4-5a35ecead38f" absoluteBounds="9.25, 22.25, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b0b4c18-9c18-44b5-afae-03a8904a63da" absoluteBounds="9.265, 22.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25f2a4d0-aae6-457f-8141-22b43fe61bca" absoluteBounds="6.25, 40.25, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/DALPortalDataContext/warehouse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf04d022-67b0-4c61-b2be-e82942dab7fb" absoluteBounds="6.265, 40.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5ad7882-a5db-468b-aa44-6c99820270d4" absoluteBounds="12, 37.25, 2, 1.5785953776041737">
+      <DataClassMoniker Name="/DALPortalDataContext/applicationAccess" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d0d5b71-f0e3-43a0-91ef-db291192879c" absoluteBounds="12.015, 37.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6985ec84-a57f-4091-8a70-a6525224f209" absoluteBounds="18, 44.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DALPortalDataContext/applicationRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56e4a024-4d4a-4270-9c93-d87081205d72" absoluteBounds="18.015, 44.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32cb752b-f385-4cfe-b36c-20915232cf48" absoluteBounds="6.5, 19.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DALPortalDataContext/Application1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac4dd4ed-9f76-4df7-9c3b-60cf518ad30c" absoluteBounds="6.515, 19.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87832b1a-0803-4146-94e0-8433772a1908" absoluteBounds="15, 32.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DALPortalDataContext/batchDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc3e1cd1-fe8f-4896-9853-d645d4544411" absoluteBounds="15.015, 32.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="63933fa3-5936-4b94-b91d-979e8776a7ff" absoluteBounds="29.5, 23.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DALPortalDataContext/colli" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2d1a452-ba04-4acd-9071-ff8766003b86" absoluteBounds="29.515, 23.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8fb8c000-c0df-418f-9f16-c028577d22b6" absoluteBounds="32.25, 32.5, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/DALPortalDataContext/colliLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca156e01-8a54-4b08-b0e0-91a11f0f5a49" absoluteBounds="32.265, 32.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dcc84a6-042a-4ea1-b972-f0464bb37e6f" absoluteBounds="24, 25.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/colliType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7aa13c4f-ace8-4a73-87d1-dbdfa4a70459" absoluteBounds="24.015, 25.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1cee20c3-3f1e-4260-9b3f-5b18bccaed1b" absoluteBounds="26.75, 24.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DALPortalDataContext/colliUnit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23a27c5b-5186-4c9b-b8d3-49626c87c81b" absoluteBounds="26.765, 25.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d15392da-d3ad-4919-b62f-c3f610c15689" absoluteBounds="3.5, 33.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DALPortalDataContext/company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b853ffa8-92ba-4e50-b408-8a92f3289815" absoluteBounds="3.515, 33.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="acfb146e-9187-4f10-8182-f2ad70adfc61" absoluteBounds="3.5, 26.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/companyGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18db0fa2-ca51-4b22-9dda-06025c94b955" absoluteBounds="3.515, 26.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5d10c90-1eb1-4727-a5ef-eff2c1d7600f" absoluteBounds="6.25, 33.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/companyGroupForBp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2467d05-d76f-40f8-9ba3-07e4ce46c22a" absoluteBounds="6.265, 33.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2705ae85-d36c-48e6-82f5-9959a2ad44b7" absoluteBounds="6.25, 31.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/companyGroupForItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21ca8ce7-da38-436a-a57c-46b8a628bc52" absoluteBounds="6.265, 31.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28f9e53b-8291-4183-868c-a97180ca7144" absoluteBounds="6.25, 36.125, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/companySection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae9ef75f-2b47-4d5d-8f47-97e8f11fea20" absoluteBounds="6.265, 36.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" absoluteBounds="18, 32.375, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/DALPortalDataContext/contactPerson" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2542aaf5-6f9c-4d36-979c-8487aa7a8bc8" absoluteBounds="18.015, 32.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e44d580-f27d-44ed-99fd-187f7597bc67" absoluteBounds="23.75, 34, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/contactPersonProject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a358e0b0-5fb2-4131-a72c-5a724c28854f" absoluteBounds="23.765, 34.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec0ac019-3ae7-4a03-bd9d-f6e2498c9f5f" absoluteBounds="9.5, 43.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6393b61e-3692-494f-8ee0-3f13e347a2ef" absoluteBounds="9.515, 43.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="858a9786-08e1-4159-8e54-856b65b8005f" absoluteBounds="0.75, 33.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/currency" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db32bf54-3e8a-4de3-adf3-0c757086e22e" absoluteBounds="0.765, 33.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abb197a8-be6b-433f-9e2e-86fb94dd4229" absoluteBounds="9.5, 16.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/docStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="505cd897-3743-4449-bf05-ebedec6ba701" absoluteBounds="9.515, 16.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" absoluteBounds="12.25, 21.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/document" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aab79702-86a0-4ec3-bc41-613b2e09eb3e" absoluteBounds="12.265, 21.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" absoluteBounds="20.75, 32.875, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/DALPortalDataContext/goodsReceipt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6f322eb-2cbf-4b41-91ec-81ffe8ad2d3e" absoluteBounds="20.765, 33.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" absoluteBounds="23.5, 28.75, 2, 3.88621256510417">
+      <DataClassMoniker Name="/DALPortalDataContext/goodsReceiptLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b2079d7-f3e7-4129-b303-9612dae9d645" absoluteBounds="23.515, 29.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d7b3e5a-7417-4434-9ba8-99d41fe0f766" absoluteBounds="23.75, 37, 2, 2.1554996744791737">
+      <DataClassMoniker Name="/DALPortalDataContext/inspection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fb7cf7d-fb95-44df-a5ef-66c41f108133" absoluteBounds="23.765, 37.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="acb8dc8d-c369-4fbc-b683-23f9cc851bd6" absoluteBounds="29.5, 31, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/DALPortalDataContext/inspectionLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab494aa8-2dac-445a-8979-9cb5319a4f46" absoluteBounds="29.515, 31.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="60ad25a7-0a89-474e-8780-b11363a728f0" absoluteBounds="3.5, 28.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/itemGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="282eb937-8337-4be6-b01a-f7639b39d0df" absoluteBounds="3.515, 28.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="603c1629-e8d3-4425-851b-d184bd3c90da" absoluteBounds="9, 24.625, 2, 4.2708154296875023">
+      <DataClassMoniker Name="/DALPortalDataContext/itemVLunar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ee0a34c-aecc-410b-b1fb-e613cd7fd0ff" absoluteBounds="9.015, 25.085, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a38d27c-60c9-468e-9406-812024e581fa" absoluteBounds="9.5, 45.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/language" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f6119cc-0b31-4747-af4e-cacbc81152d4" absoluteBounds="9.515, 45.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="120048f2-ae1c-47c3-a840-d1697eef9e90" absoluteBounds="12.25, 19.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/lineStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc5a1913-374f-4c81-bef2-d62ec4e91fea" absoluteBounds="12.265, 19.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d723ecef-6d34-49c9-b467-f649fa562095" absoluteBounds="12.25, 40.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/lineType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d9e222f-19cb-44ca-8468-3d1fea664156" absoluteBounds="12.265, 40.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fa96abe-67a1-42ae-8689-33dfe3c8db9b" absoluteBounds="26.75, 22.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DALPortalDataContext/packList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cff85b61-b46b-446e-9d66-1feefd2262ba" absoluteBounds="26.765, 23.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d25c3f85-bf8e-4ec6-a79e-e9a0c6352c80" absoluteBounds="9, 36.25, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/DALPortalDataContext/priceItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1140182-4fc2-4aa4-9427-d9ca736f9bce" absoluteBounds="9.015, 36.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ded42c8-1170-4204-81a5-3750bc7e77a9" absoluteBounds="6.25, 43.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/priceList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79a768c7-bed0-47e0-aaff-040e0c60b8c3" absoluteBounds="6.265, 43.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="626290be-8481-413c-adc8-8e441f092c08" absoluteBounds="12, 13.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/DALPortalDataContext/Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="685df8b6-e3a7-43b3-8659-15a67af889b7" absoluteBounds="12.015, 13.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9836fbe4-c028-4959-bfc9-151958662467" absoluteBounds="15, 35.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DALPortalDataContext/project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1346f759-baca-4e64-8277-6882e62d8e15" absoluteBounds="15.015, 35.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7f31485-c559-4415-824a-8a14c530f4bc" absoluteBounds="18, 27.25, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/DALPortalDataContext/purchaseOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41943679-055a-4fce-8513-2058bfe8b8e9" absoluteBounds="18.015, 27.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d898efb8-06f3-400d-8763-1349c59aca05" absoluteBounds="20.75, 27, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/DALPortalDataContext/purchaseOrderLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="326aa4da-4f9e-4a27-be74-549e6ded125b" absoluteBounds="20.765, 27.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b0b1c37-8e05-4c87-a4c2-97a3494b78df" absoluteBounds="9.25, 48.25, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/DALPortalDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="832259a7-37e5-4be0-a937-6c40d8bdd39f" absoluteBounds="9.265, 48.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="510f5321-39bc-4d9d-9cd3-17c5b07f559a" absoluteBounds="12.25, 27.25, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/DALPortalDataContext/salesOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b73c728-8b52-443c-832a-da1b3f6395e9" absoluteBounds="12.265, 27.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e66e665-4b8e-4d18-bafe-4b3eeb6ad097" absoluteBounds="12, 24.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DALPortalDataContext/shoppingCart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd2a8c8e-eeac-450c-a33f-c15a5c563381" absoluteBounds="12.015, 24.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca89b091-f406-40a6-a59e-be2bc299859e" absoluteBounds="9, 40, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/DALPortalDataContext/stock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37e327d5-b3de-4e07-8d4c-2ec222253764" absoluteBounds="9.015, 40.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8451b461-9cdf-45c2-a49f-ba523a039e93" absoluteBounds="12.25, 45.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DALPortalDataContext/translate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d537e06f-2aea-48cc-86a3-9e996a1682cc" absoluteBounds="12.265, 45.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fe592ef-4fc2-461b-8f03-227836867f1d" absoluteBounds="26.75, 37.5, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/DALPortalDataContext/transport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca75aa75-12f3-487f-973c-cd54b5151848" absoluteBounds="26.765, 37.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23135262-735c-4393-a887-f0c8ec54a0c1" absoluteBounds="20.75, 37.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DALPortalDataContext/transportProject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96c7f42f-57fc-4751-9fed-e46167779657" absoluteBounds="20.765, 37.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efdb45a1-322e-4bbb-9be9-834f81fc8299" absoluteBounds="18, 41.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/transportType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8571b03-842b-4c78-8fd7-4e4e9e121b10" absoluteBounds="18.015, 41.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85000b54-a94b-4373-bf16-1aaad3c732fc" absoluteBounds="3.5, 30.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/unitOfMeasure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfac6a13-8b6b-4d6c-b353-8cf955d200c0" absoluteBounds="3.515, 30.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b9b8a56-596f-4a41-a690-fed4a5532258" absoluteBounds="20.75, 24.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/unitOfMeasureLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67c533a9-f436-4d2e-9da5-6b34aca9514a" absoluteBounds="20.765, 24.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98595313-84fd-4fe2-8b95-ffe31c6fdd14" absoluteBounds="18, 24.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/unitOfMeasureOrg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="edaac5b6-ee19-42c1-bdfa-e267ac7be8ad" absoluteBounds="18.015, 24.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a574769-c65b-44bf-9e78-95a6293d68de" absoluteBounds="9.25, 19.125, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DALPortalDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9173bcb1-7a4d-4f19-b4b1-cf78c6538b64" absoluteBounds="9.265, 19.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ea99e46-500f-431d-bffb-f99981ed1355" absoluteBounds="15, 37.875, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/DALPortalDataContext/UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f34bd0a-79ee-41a3-be5c-e2a205a877d2" absoluteBounds="15.015, 38.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.21875 : 23.4439925130208); (11.21875 : 38.3598453776042); (11.6666666666667 : 38.3598453776042 : JumpStart); (11.8333333333333 : 38.3598453776042 : JumpEnd); (12 : 38.3598453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/application/application_applicationAccess" />
+      <nodes>
+        <classShapeMoniker Id="3cba3f37-3c86-4c25-8ac4-5a35ecead38f" />
+        <classShapeMoniker Id="d5ad7882-a5db-468b-aa44-6c99820270d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 22.6734081142328); (11.3243831750744 : 22.8890222077206 : JumpStart); (11.3787368249256 : 23.0465768284894 : JumpEnd); (11.6452070271434 : 23.8189925130208); (11.7291666666667 : 23.8189925130208 : JumpStart); (12.1770833333333 : 23.8189925130208 : JumpEnd); (14.1175042789714 : 23.8189925130208 : JumpStart); (14.4270828333333 : 23.8189925130208 : JumpEnd); (14.6041666666667 : 23.8189925130208 : JumpStart); (14.7708333333333 : 23.8189925130208 : JumpEnd); (15.0104166666667 : 23.8189925130208 : JumpStart); (15.1770833333333 : 23.8189925130208 : JumpEnd); (16.6979191666667 : 23.8189925130208 : JumpStart); (16.8645858333333 : 23.8189925130208 : JumpEnd); (17.2916666666667 : 23.8189925130208 : JumpStart); (17.7708333333333 : 23.8189925130208 : JumpEnd); (17.875 : 23.8189925130208); (17.875 : 44.25); (18 : 44.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/application/application_applicationRole" />
+      <nodes>
+        <classShapeMoniker Id="3cba3f37-3c86-4c25-8ac4-5a35ecead38f" />
+        <classShapeMoniker Id="6985ec84-a57f-4091-8a70-a6525224f209" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(31.5 : 24.8662019856771); (33.781252 : 24.8662019856771); (33.781252 : 32.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/colli/colli_colliLine" />
+      <nodes>
+        <classShapeMoniker Id="63933fa3-5936-4b94-b91d-979e8776a7ff" />
+        <classShapeMoniker Id="8fb8c000-c0df-418f-9f16-c028577d22b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(28.75 : 25.5537019856771); (28.7916666666667 : 25.5537019856771 : JumpStart); (29.2708333333333 : 25.5537019856771 : JumpEnd); (29.2916666666667 : 25.5537019856771 : JumpStart); (29.4583333333333 : 25.5537019856771 : JumpEnd); (29.5 : 25.5537019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/colliUnit/colliUnit_colli" />
+      <nodes>
+        <classShapeMoniker Id="1cee20c3-3f1e-4260-9b3f-5b18bccaed1b" />
+        <classShapeMoniker Id="63933fa3-5936-4b94-b91d-979e8776a7ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(26 : 25.9719962565104); (26.4166666666667 : 25.9719962565104 : JumpStart); (26.5833333333333 : 25.9719962565104 : JumpEnd); (26.75 : 25.9719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/colliType/colliType_colliUnit" />
+      <nodes>
+        <classShapeMoniker Id="3dcc84a6-042a-4ea1-b972-f0464bb37e6f" />
+        <classShapeMoniker Id="1cee20c3-3f1e-4260-9b3f-5b18bccaed1b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 34.7612939453125); (4.5 : 41.0392976888021); (6.25 : 41.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_warehouse" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="25f2a4d0-aae6-457f-8141-22b43fe61bca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 34.0969962565104); (5.54166666666667 : 34.0969962565104 : JumpStart); (5.70833333333333 : 34.0969962565104 : JumpEnd); (6.02604166666667 : 34.0969962565104 : JumpStart); (6.19270833333333 : 34.0969962565104 : JumpEnd); (6.25 : 34.0969962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_companyGroupForBp" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="e5d10c90-1eb1-4727-a5ef-eff2c1d7600f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 27.6618455607472); (5.69107443490112 : 27.8529199956483 : JumpStart); (5.80892556509888 : 27.9707711258461 : JumpEnd); (5.81607443490112 : 27.9779199956483 : JumpStart); (5.93392556509888 : 28.0957711258461 : JumpEnd); (6.03125 : 28.1930955607472); (6.03125 : 33.28125); (6.05044943490112 : 33.3004494349011 : JumpStart); (6.16830056509888 : 33.4183005650989 : JumpEnd); (6.25 : 33.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/companyGroup/companyGroup_companyGroupForBp" />
+      <nodes>
+        <classShapeMoniker Id="acfb146e-9187-4f10-8182-f2ad70adfc61" />
+        <classShapeMoniker Id="e5d10c90-1eb1-4727-a5ef-eff2c1d7600f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.4187205782752); (5.69007344521394 : 33.2350518313336 : JumpStart); (5.80992655478606 : 33.1192372817137 : JumpEnd); (5.81507344521394 : 33.1142638204579 : JumpStart); (5.93492655478606 : 32.9984492708379 : JumpEnd); (5.97132344521393 : 32.9632788068632 : JumpStart); (6.16930155478607 : 32.7719717504459 : JumpEnd); (6.24999999999982 : 32.6939925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_companyGroupForItem" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="2705ae85-d36c-48e6-82f5-9959a2ad44b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 27.0496702803736); (5.66666666666667 : 27.0496702803736 : JumpStart); (5.95833333333333 : 27.0496702803736 : JumpEnd); (6.02604166666667 : 27.0496702803736 : JumpStart); (6.19270833333333 : 27.0496702803736 : JumpEnd); (6.40625 : 27.0496702803736); (6.40625 : 31.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/companyGroup/companyGroup_companyGroupForItem" />
+      <nodes>
+        <classShapeMoniker Id="acfb146e-9187-4f10-8182-f2ad70adfc61" />
+        <classShapeMoniker Id="2705ae85-d36c-48e6-82f5-9959a2ad44b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.9687475 : 34.7612939453125); (3.9687475 : 36.7219962565104); (4.41666666666667 : 36.7219962565104 : JumpStart); (4.58333333333333 : 36.7219962565104 : JumpEnd); (4.68229291666667 : 36.7219962565104 : JumpStart); (4.84895958333333 : 36.7219962565104 : JumpEnd); (5.21354541666667 : 36.7219962565104 : JumpStart); (5.38021208333333 : 36.7219962565104 : JumpEnd); (6.25 : 36.7219962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_companySection" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="28f9e53b-8291-4183-868c-a97180ca7144" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20 : 32.7556062825521); (20.0416616666667 : 32.7556062825521 : JumpStart); (20.2708333333333 : 32.7556062825521 : JumpEnd); (20.4791666666667 : 32.7556062825521 : JumpStart); (20.6458333333333 : 32.7556062825521 : JumpEnd); (21.1354146666667 : 32.7556062825521 : JumpStart); (21.3020813333333 : 32.7556062825521 : JumpEnd); (21.5338536666667 : 32.7556062825521 : JumpStart); (21.7026820834169 : 32.7556062825521 : JumpEnd); (21.9322926666667 : 32.7556062825521 : JumpStart); (22.0989593333333 : 32.7556062825521 : JumpEnd); (22.7916666666667 : 32.7556062825521 : JumpStart); (23.3958333333333 : 32.7556062825521 : JumpEnd); (23.5104171666667 : 32.7556062825521 : JumpStart); (23.6770838333333 : 32.7556062825521 : JumpEnd); (24.4166666666667 : 32.7556062825521 : JumpStart); (24.5833333333333 : 32.7556062825521 : JumpEnd); (25.65625 : 32.7556062825521); (25.65625 : 34)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/contactPerson/contactPerson_contactPersonProject" />
+      <nodes>
+        <classShapeMoniker Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" />
+        <classShapeMoniker Id="5e44d580-f27d-44ed-99fd-187f7597bc67" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 34.0969962565104); (3.5 : 34.0969962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/currency/currency_company" />
+      <nodes>
+        <classShapeMoniker Id="858a9786-08e1-4159-8e54-856b65b8005f" />
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 21.7672461282552); (14.2604161666667 : 21.7672461282552 : JumpStart); (14.4270828333333 : 21.7672461282552 : JumpEnd); (14.6041666666667 : 21.7672461282552 : JumpStart); (14.7708333333333 : 21.7672461282552 : JumpEnd); (15.09375 : 21.7672461282552); (15.09375 : 32.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_batchDocument" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="87832b1a-0803-4146-94e0-8433772a1908" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 21.6023710641276); (14.2604161666667 : 21.6023710641276 : JumpStart); (14.4270828333333 : 21.6023710641276 : JumpEnd); (14.6041666666667 : 21.6023710641276 : JumpStart); (14.7708333333333 : 21.6023710641276 : JumpEnd); (17.2916666666667 : 21.6023710641276 : JumpStart); (17.5833333333333 : 21.6023710641276 : JumpEnd); (17.6041666666667 : 21.6023710641276 : JumpStart); (17.7708333333333 : 21.6023710641276 : JumpEnd); (20.0416616666667 : 21.6023710641276 : JumpStart); (20.2395808333333 : 21.6023710641276 : JumpEnd); (20.4166666666667 : 21.6023710641276 : JumpStart); (20.6458333333333 : 21.6023710641276 : JumpEnd); (22.9375 : 21.6023710641276); (22.9375 : 24.3862939453125); (23.0416666666667 : 24.3862939453125 : JumpStart); (23.3958333333333 : 24.3862939453125 : JumpEnd); (23.4166666666667 : 24.3862939453125 : JumpStart); (23.6770838333333 : 24.3862939453125 : JumpEnd); (25.9166666666667 : 24.3862939453125 : JumpStart); (26.0833333333333 : 24.3862939453125 : JumpEnd); (28.9166666666667 : 24.3862939453125 : JumpStart); (29.0833333333333 : 24.3862939453125 : JumpEnd); (29.1041666666667 : 24.3862939453125 : JumpStart); (29.2708333333333 : 24.3862939453125 : JumpEnd); (29.375 : 24.3862939453125); (29.375 : 26.4824039713542); (32.718748 : 26.4824039713542); (32.718748 : 32.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_colliLine" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="8fb8c000-c0df-418f-9f16-c028577d22b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 34.1150242226563); (5.54166666666667 : 34.1150242226563 : JumpStart); (5.70833333333333 : 34.1150242226563 : JumpEnd); (5.9375 : 34.1150242226563); (5.9375 : 33.25); (6.02604166666667 : 33.25 : JumpStart); (6.19270833333333 : 33.25 : JumpEnd); (8.32291416666667 : 33.25 : JumpStart); (8.64583333333333 : 33.25 : JumpEnd); (8.72916666666667 : 33.25 : JumpStart); (8.89583333333333 : 33.25 : JumpEnd); (8.91666666666667 : 33.25 : JumpStart); (9.08333333333333 : 33.25 : JumpEnd); (11.1354166666667 : 33.25 : JumpStart); (11.4583333333333 : 33.25 : JumpEnd); (11.5416666666667 : 33.25 : JumpStart); (11.7083333333333 : 33.25 : JumpEnd); (12.0104166666667 : 33.25 : JumpStart); (12.1770833333333 : 33.25 : JumpEnd); (12.4947886666667 : 33.25 : JumpStart); (12.6614553333333 : 33.25 : JumpEnd); (13.6979191666667 : 33.25 : JumpStart); (13.8645858333333 : 33.25 : JumpEnd); (14.2604161666667 : 33.25 : JumpStart); (14.4270828333333 : 33.25 : JumpEnd); (14.5416666666667 : 33.25 : JumpStart); (14.7708333333333 : 33.25 : JumpEnd); (14.8125 : 33.25); (14.8125 : 32); (15.0104166666667 : 32 : JumpStart); (15.1770833333333 : 32 : JumpEnd); (16.0416666666667 : 32 : JumpStart); (16.2083333333333 : 32 : JumpEnd); (17.2916666666667 : 32 : JumpStart); (17.4583333333333 : 32 : JumpEnd); (17.7916666666667 : 32 : JumpStart); (17.9583333333333 : 32 : JumpEnd); (18.7838536666667 : 32 : JumpStart); (18.9505203333333 : 32 : JumpEnd); (19.5494791666667 : 32 : JumpStart); (19.7161458333333 : 32 : JumpEnd); (20.0416616666667 : 32 : JumpStart); (20.2708333333333 : 32 : JumpEnd); (20.4166666666667 : 32 : JumpStart); (20.7708333333333 : 32 : JumpEnd); (21.5338536666667 : 32 : JumpStart); (21.7005203333333 : 32 : JumpEnd); (22.015626 : 32); (22.015626 : 32.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_goodsReceipt" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 34.261871320638); (3.25 : 34.261871320638); (3.25 : 33.125); (5.21354466666667 : 33.125 : JumpStart); (5.38021133333333 : 33.125 : JumpEnd); (5.66666666666667 : 33.125 : JumpStart); (6.19270833333333 : 33.125 : JumpEnd); (8.32291416666667 : 33.125 : JumpStart); (8.64583333333333 : 33.125 : JumpEnd); (8.72916666666667 : 33.125 : JumpStart); (8.89583333333333 : 33.125 : JumpEnd); (8.91666666666667 : 33.125 : JumpStart); (9.08333333333333 : 33.125 : JumpEnd); (11.1354166666667 : 33.125 : JumpStart); (11.4583333333333 : 33.125 : JumpEnd); (11.5416666666667 : 33.125 : JumpStart); (11.7083333333333 : 33.125 : JumpEnd); (12.0104166666667 : 33.125 : JumpStart); (12.1770833333333 : 33.125 : JumpEnd); (12.4947886666667 : 33.125 : JumpStart); (12.6614553333333 : 33.125 : JumpEnd); (13.6979191666667 : 33.125 : JumpStart); (13.8645858333333 : 33.125 : JumpEnd); (14.0416666666667 : 33.125 : JumpStart); (14.2083333333333 : 33.125 : JumpEnd); (14.2604161666667 : 33.125 : JumpStart); (14.4270828333333 : 33.125 : JumpEnd); (14.6041666666667 : 33.125 : JumpStart); (14.8333333333333 : 33.125 : JumpEnd); (14.875 : 33.125); (14.875 : 31.875); (15.0104166666667 : 31.875 : JumpStart); (15.1770833333333 : 31.875 : JumpEnd); (16.0416666666667 : 31.875 : JumpStart); (16.3333333333333 : 31.875 : JumpEnd); (17.2916666666667 : 31.875 : JumpStart); (17.4583333333333 : 31.875 : JumpEnd); (17.7916666666667 : 31.875 : JumpStart); (17.9583333333333 : 31.875 : JumpEnd); (18.7838536666667 : 31.875 : JumpStart); (18.9505203333333 : 31.875 : JumpEnd); (19.5494791666667 : 31.875 : JumpStart); (19.7161458333333 : 31.875 : JumpEnd); (20.0416616666667 : 31.875 : JumpStart); (20.2708333333333 : 31.875 : JumpEnd); (20.2916666666667 : 31.875 : JumpStart); (20.7708333333333 : 31.875 : JumpEnd); (21.617187 : 31.875); (21.617187 : 32.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/currency/currency_goodsReceipt" />
+      <nodes>
+        <classShapeMoniker Id="858a9786-08e1-4159-8e54-856b65b8005f" />
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 17.0969962565104); (11.7291666666667 : 17.0969962565104 : JumpStart); (12.0208333333333 : 17.0969962565104 : JumpEnd); (17.4166666666667 : 17.0969962565104 : JumpStart); (17.5833333333333 : 17.0969962565104 : JumpEnd); (20.0416616666667 : 17.0969962565104 : JumpStart); (20.2395808333333 : 17.0969962565104 : JumpEnd); (20.5 : 17.0969962565104); (20.5 : 32.5); (21.218748 : 32.5); (21.218748 : 32.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/docStatus/docStatus_goodsReceipt" />
+      <nodes>
+        <classShapeMoniker Id="abb197a8-be6b-433f-9e2e-86fb94dd4229" />
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.2490815442208 : 22.6939925130208); (14.2848239349011 : 22.7297349037011 : JumpStart); (14.4026750650989 : 22.8475860338989 : JumpEnd); (14.4053315442208 : 22.8502425130208); (14.6041666666667 : 22.8502425130208 : JumpStart); (14.7708333333333 : 22.8502425130208 : JumpEnd); (15.0104166666667 : 22.8502425130208 : JumpStart); (15.1770833333333 : 22.8502425130208 : JumpEnd); (17.2916666666667 : 22.8502425130208 : JumpStart); (17.5833333333333 : 22.8502425130208 : JumpEnd); (17.6041666666667 : 22.8502425130208 : JumpStart); (17.7708333333333 : 22.8502425130208 : JumpEnd); (20.0416616666667 : 22.8502425130208 : JumpStart); (20.2708333333333 : 22.8502425130208 : JumpEnd); (20.4166666666667 : 22.8502425130208 : JumpStart); (20.6458333333333 : 22.8502425130208 : JumpEnd); (20.6875 : 22.8502425130208); (20.6875 : 32.5); (21.1383831888231 : 32.6236773411457 : JumpStart); (21.2991128111769 : 32.6677655059495 : JumpEnd); (21.5368221888231 : 32.732969231707 : JumpStart); (21.6975518111769 : 32.7770573965108 : JumpEnd); (22.0546153846154 : 32.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_goodsReceipt" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 21.9321211923828); (14.2604161666667 : 21.9321211923828 : JumpStart); (14.4270828333333 : 21.9321211923828 : JumpEnd); (14.6041666666667 : 21.9321211923828 : JumpStart); (14.7708333333333 : 21.9321211923828 : JumpEnd); (15.0104166666667 : 21.9321211923828 : JumpStart); (15.1770833333333 : 21.9321211923828 : JumpEnd); (17.2916666666667 : 21.9321211923828 : JumpStart); (17.5833333333333 : 21.9321211923828 : JumpEnd); (17.6041666666667 : 21.9321211923828 : JumpStart); (17.7708333333333 : 21.9321211923828 : JumpEnd); (20.0416616666667 : 21.9321211923828 : JumpStart); (20.2395808333333 : 21.9321211923828 : JumpEnd); (20.4166666666667 : 21.9321211923828 : JumpStart); (20.6458333333333 : 21.9321211923828 : JumpEnd); (22.8541666666667 : 21.9321211923828 : JumpStart); (23.0208333333333 : 21.9321211923828 : JumpEnd); (23.5937505 : 21.9321211923828); (23.5937505 : 28.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.261871320638); (14.2604161666667 : 22.261871320638 : JumpStart); (14.4792065630267 : 22.261871320638 : JumpEnd); (14.6041666666667 : 22.261871320638 : JumpStart); (14.7708333333333 : 22.261871320638 : JumpEnd); (15.0104166666667 : 22.261871320638 : JumpStart); (15.1770833333333 : 22.261871320638 : JumpEnd); (17.2916666666667 : 22.261871320638 : JumpStart); (17.5833333333333 : 22.261871320638 : JumpEnd); (17.6041666666667 : 22.261871320638 : JumpStart); (17.7708333333333 : 22.261871320638 : JumpEnd); (20.0416616666667 : 22.261871320638 : JumpStart); (20.2395808333333 : 22.261871320638 : JumpEnd); (20.4166666666667 : 22.261871320638 : JumpStart); (20.6458333333333 : 22.261871320638 : JumpEnd); (22.8541666666667 : 22.261871320638 : JumpStart); (23.0208333333333 : 22.261871320638 : JumpEnd); (23.2291666666667 : 22.261871320638 : JumpStart); (23.3958333333333 : 22.261871320638 : JumpEnd); (23.5937505 : 22.261871320638); (23.5937505 : 28.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_goodsReceiptLine1" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 35.8165511067708); (23.5937505 : 35.8165511067708); (23.5937505 : 32.6362125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/goodsReceipt/goodsReceipt_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.0969962565104); (14.2604161666667 : 22.0969962565104 : JumpStart); (14.4270828333333 : 22.0969962565104 : JumpEnd); (14.6041666666667 : 22.0969962565104 : JumpStart); (14.7708333333333 : 22.0969962565104 : JumpEnd); (15.0104166666667 : 22.0969962565104 : JumpStart); (15.1770833333333 : 22.0969962565104 : JumpEnd); (17.2916666666667 : 22.0969962565104 : JumpStart); (17.5833333333333 : 22.0969962565104 : JumpEnd); (17.6041666666667 : 22.0969962565104 : JumpStart); (17.7708333333333 : 22.0969962565104 : JumpEnd); (20.0416616666667 : 22.0969962565104 : JumpStart); (20.2395808333333 : 22.0969962565104 : JumpEnd); (20.4166666666667 : 22.0969962565104 : JumpStart); (20.6458333333333 : 22.0969962565104 : JumpEnd); (22.8541666666667 : 22.0969962565104 : JumpStart); (23.0208333333333 : 22.0969962565104 : JumpEnd); (23.3125 : 22.0969962565104); (23.3125 : 28.5); (23.5104171666667 : 28.5 : JumpStart); (23.6770838333333 : 28.5 : JumpEnd); (24.5416661666667 : 28.5 : JumpStart); (24.7083328333333 : 28.5 : JumpEnd); (26 : 28.5); (26 : 33.75); (25.7395833333333 : 33.75 : JumpStart); (25.5729166666667 : 33.75 : JumpEnd); (23.7708333333333 : 33.75 : JumpStart); (23.5104171666667 : 33.75 : JumpEnd); (23.375 : 33.75); (23.375 : 36.375); (23.6041666666667 : 36.375 : JumpStart); (23.7708333333333 : 36.375 : JumpEnd); (24.3248696666667 : 36.375 : JumpStart); (24.4915363333333 : 36.375 : JumpEnd); (25.079101 : 36.375); (25.079101 : 37)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_inspection" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="4d7b3e5a-7417-4434-9ba8-99d41fe0f766" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.4267463847656); (14.2604161666667 : 22.4267463847656 : JumpStart); (14.5502655663247 : 22.4267463847656 : JumpEnd); (14.6041666666667 : 22.4267463847656 : JumpStart); (14.7708333333333 : 22.4267463847656 : JumpEnd); (15.0104166666667 : 22.4267463847656 : JumpStart); (15.1770833333333 : 22.4267463847656 : JumpEnd); (17.2916666666667 : 22.4267463847656 : JumpStart); (17.5833333333333 : 22.4267463847656 : JumpEnd); (17.6041666666667 : 22.4267463847656 : JumpStart); (17.7708333333333 : 22.4267463847656 : JumpEnd); (20.0416616666667 : 22.4267463847656 : JumpStart); (20.2395808333333 : 22.4267463847656 : JumpEnd); (20.4166666666667 : 22.4267463847656 : JumpStart); (20.6458333333333 : 22.4267463847656 : JumpEnd); (22.8541666666667 : 22.4267463847656 : JumpStart); (23.0208333333333 : 22.4267463847656 : JumpEnd); (23.25 : 22.4267463847656); (23.25 : 24.5112939453125); (23.4166666666667 : 24.5112939453125 : JumpStart); (23.6770838333333 : 24.5112939453125 : JumpEnd); (25.9166666666667 : 24.5112939453125 : JumpStart); (26.0833333333333 : 24.5112939453125 : JumpEnd); (28.9166666666667 : 24.5112939453125 : JumpStart); (29.0833333333333 : 24.5112939453125 : JumpEnd); (29.125 : 24.5112939453125); (29.125 : 26.9824039713542); (30.5 : 26.9824039713542); (30.5 : 31)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_inspectionLine" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="acb8dc8d-c369-4fbc-b683-23f9cc851bd6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(25.75 : 37.21875); (26.1666666666667 : 37.21875 : JumpStart); (26.3333333333333 : 37.21875 : JumpEnd); (26.4166666666667 : 37.21875 : JumpStart); (26.5833333333333 : 37.21875 : JumpEnd); (28.9166666666667 : 37.21875 : JumpStart); (29.0833333333333 : 37.21875 : JumpEnd); (29.1041666666667 : 37.21875 : JumpStart); (29.2708333333333 : 37.21875 : JumpEnd); (30.5 : 37.21875); (30.5 : 35.0785139973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/inspection/inspection_inspectionLine" />
+      <nodes>
+        <classShapeMoniker Id="4d7b3e5a-7417-4434-9ba8-99d41fe0f766" />
+        <classShapeMoniker Id="acb8dc8d-c369-4fbc-b683-23f9cc851bd6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 19.7054174167073); (14.2604161666667 : 19.7054174167073 : JumpStart); (14.4270828333333 : 19.7054174167073 : JumpEnd); (17.4166666666667 : 19.7054174167073 : JumpStart); (17.5833333333333 : 19.7054174167073 : JumpEnd); (17.6041666666667 : 19.7054174167073 : JumpStart); (17.7708333333333 : 19.7054174167073 : JumpEnd); (20.0416616666667 : 19.7054174167073 : JumpStart); (20.2395808333333 : 19.7054174167073 : JumpEnd); (20.4166666666667 : 19.7054174167073 : JumpStart); (20.5833333333333 : 19.7054174167073 : JumpEnd); (23.5937505 : 19.7054174167073); (23.5937505 : 28.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineStatus/lineStatus_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="120048f2-ae1c-47c3-a840-d1697eef9e90" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 40.7564111328125); (23.6875 : 40.7564111328125); (23.6875 : 33.2612125651042); (24.5 : 33.2612125651042); (24.5 : 32.6362125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineType/lineType_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="d723ecef-6d34-49c9-b467-f649fa562095" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(28.75 : 23.8181469726563); (29.1041666666667 : 23.8181469726563 : JumpStart); (29.2708333333333 : 23.8181469726563 : JumpEnd); (29.5 : 23.8181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/packList/packList_colli" />
+      <nodes>
+        <classShapeMoniker Id="5fa96abe-67a1-42ae-8689-33dfe3c8db9b" />
+        <classShapeMoniker Id="63933fa3-5936-4b94-b91d-979e8776a7ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.76562625 : 34.7612939453125); (4.76562625 : 37.6050434453125); (5.21354541666667 : 37.6050434453125 : JumpStart); (5.38021208333333 : 37.6050434453125 : JumpEnd); (8.35416666666667 : 37.6050434453125 : JumpStart); (8.52083333333333 : 37.6050434453125 : JumpEnd); (9 : 37.6050434453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_priceItem" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="d25c3f85-bf8e-4ec6-a79e-e9a0c6352c80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 43.5312264964944); (8.65625 : 43.1249764964944); (8.65625 : 36.8962697226562); (9 : 36.8962697226562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/priceList/priceList_priceItem" />
+      <nodes>
+        <classShapeMoniker Id="7ded42c8-1170-4204-81a5-3750bc7e77a9" />
+        <classShapeMoniker Id="d25c3f85-bf8e-4ec6-a79e-e9a0c6352c80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 36.6258048502604); (17.7916666666667 : 36.6258048502604 : JumpStart); (17.9583333333333 : 36.6258048502604 : JumpEnd); (20.0416616666667 : 36.6258048502604 : JumpStart); (20.3958333333333 : 36.6258048502604 : JumpEnd); (20.4166666666667 : 36.6258048502604 : JumpStart); (20.5833333333333 : 36.6258048502604 : JumpEnd); (21.6666666666667 : 36.6258048502604 : JumpStart); (21.8333333333333 : 36.6258048502604 : JumpEnd); (23.6041666666667 : 36.6258048502604 : JumpStart); (23.7708333333333 : 36.6258048502604 : JumpEnd); (24.408203 : 36.6258048502604); (24.408203 : 35.1939925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/project/project_contactPersonProject" />
+      <nodes>
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+        <classShapeMoniker Id="5e44d580-f27d-44ed-99fd-187f7597bc67" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 35.7780582682292); (17.4166666666667 : 35.7780582682292 : JumpStart); (17.5833333333333 : 35.7780582682292 : JumpEnd); (17.7916666666667 : 35.7780582682292 : JumpStart); (17.9583333333333 : 35.7780582682292 : JumpEnd); (20.0416616666667 : 35.7780582682292 : JumpStart); (20.2708333333333 : 35.7780582682292 : JumpEnd); (20.2916666666667 : 35.7780582682292 : JumpStart); (20.4583333333333 : 35.7780582682292 : JumpEnd); (20.4791666666667 : 35.7780582682292 : JumpStart); (20.6458333333333 : 35.7780582682292 : JumpEnd); (20.75 : 35.7780582682292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/project/project_goodsReceipt" />
+      <nodes>
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 36.1550540592448); (17.7916666666667 : 36.1550540592448 : JumpStart); (17.9583333333333 : 36.1550540592448 : JumpEnd); (20.0416616666667 : 36.1550540592448 : JumpStart); (20.3958333333333 : 36.1550540592448 : JumpEnd); (20.5 : 36.1550540592448); (20.5 : 36.8141097005208); (20.5416666666667 : 36.8141097005208 : JumpStart); (20.7083333333333 : 36.8141097005208 : JumpEnd); (21.6666666666667 : 36.8141097005208 : JumpStart); (21.8333333333333 : 36.8141097005208 : JumpEnd); (23.6041666666667 : 36.8141097005208 : JumpStart); (23.7708333333333 : 36.8141097005208 : JumpEnd); (24.75 : 36.8141097005208); (24.75 : 37)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/project/project_inspection" />
+      <nodes>
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+        <classShapeMoniker Id="4d7b3e5a-7417-4434-9ba8-99d41fe0f766" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 34.6466045146484); (6 : 34.6466045146484); (6 : 34.9439925130208); (6.02604166666667 : 34.9439925130208 : JumpStart); (6.19270833333333 : 34.9439925130208 : JumpEnd); (8.32291416666667 : 34.9439925130208 : JumpStart); (8.64583333333333 : 34.9439925130208 : JumpEnd); (8.66666666666667 : 34.9439925130208 : JumpStart); (8.83333333333333 : 34.9439925130208 : JumpEnd); (8.875 : 34.9439925130208); (8.875 : 33.5); (8.91666666666667 : 33.5 : JumpStart); (9.08333333333333 : 33.5 : JumpEnd); (11.1354166666667 : 33.5 : JumpStart); (11.4583333333333 : 33.5 : JumpEnd); (11.5416666666667 : 33.5 : JumpStart); (11.7083333333333 : 33.5 : JumpEnd); (12.4947886666667 : 33.5 : JumpStart); (12.6614553333333 : 33.5 : JumpEnd); (12.7604146666667 : 33.5 : JumpStart); (12.9270813333333 : 33.5 : JumpEnd); (13.6979191666667 : 33.5 : JumpStart); (13.8645858333333 : 33.5 : JumpEnd); (14.2604161666667 : 33.5 : JumpStart); (14.4270828333333 : 33.5 : JumpEnd); (14.5416666666667 : 33.5 : JumpStart); (14.8333333333333 : 33.5 : JumpEnd); (14.875 : 33.5); (14.875 : 34.1458968098958); (16 : 34.1458968098958); (16 : 35.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_project" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.7684497363281); (5.54166666666667 : 33.7684497363281 : JumpStart); (5.72125383231343 : 33.7684497363281 : JumpEnd); (5.75 : 33.7684497363281); (5.75 : 33); (5.79166666666667 : 33 : JumpStart); (6.19270833333333 : 33 : JumpEnd); (8.32291416666667 : 33 : JumpStart); (8.64583333333333 : 33 : JumpEnd); (8.91666666666667 : 33 : JumpStart); (9.08333333333333 : 33 : JumpEnd); (11.1354166666667 : 33 : JumpStart); (11.3020833333333 : 33 : JumpEnd); (11.5416666666667 : 33 : JumpStart); (11.7083333333333 : 33 : JumpEnd); (12.0104166666667 : 33 : JumpStart); (12.1770833333333 : 33 : JumpEnd); (12.4947886666667 : 33 : JumpStart); (12.6614553333333 : 33 : JumpEnd); (13.1471347291667 : 33 : JumpStart); (13.3138013958333 : 33 : JumpEnd); (13.6979191666667 : 33 : JumpStart); (13.8645858333333 : 33 : JumpEnd); (14.0416666666667 : 33 : JumpStart); (14.2083333333333 : 33 : JumpEnd); (14.2604161666667 : 33 : JumpStart); (14.4270828333333 : 33 : JumpEnd); (14.5 : 33); (14.5 : 31.6875); (14.6041666666667 : 31.6875 : JumpStart); (14.7708333333333 : 31.6875 : JumpEnd); (15.0104166666667 : 31.6875 : JumpStart); (15.1770833333333 : 31.6875 : JumpEnd); (16.0416666666667 : 31.6875 : JumpStart); (16.3333333333333 : 31.6875 : JumpEnd); (17.2916666666667 : 31.6875 : JumpStart); (17.4583333333333 : 31.6875 : JumpEnd); (17.7916666666667 : 31.6875 : JumpStart); (17.9583333333333 : 31.6875 : JumpEnd); (18.3854146666667 : 31.6875 : JumpStart); (18.5520813333333 : 31.6875 : JumpEnd); (18.7838536666667 : 31.6875 : JumpStart); (18.9505203333333 : 31.6875 : JumpEnd); (19.265626 : 31.6875); (19.265626 : 30.7516097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_purchaseOrder" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="f7f31485-c559-4415-824a-8a14c530f4bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 33.7672461282552); (3 : 33.7672461282552); (3 : 32.875); (3.88541466666667 : 32.875 : JumpStart); (4.05208133333333 : 32.875 : JumpEnd); (4.68229266666667 : 32.875 : JumpStart); (4.84895933333333 : 32.875 : JumpEnd); (4.94791866666667 : 32.875 : JumpStart); (5.11458533333333 : 32.875 : JumpEnd); (5.21354466666667 : 32.875 : JumpStart); (5.38021133333333 : 32.875 : JumpEnd); (5.79166666666667 : 32.875 : JumpStart); (6.19270833333333 : 32.875 : JumpEnd); (8.32291416666667 : 32.875 : JumpStart); (8.64583333333333 : 32.875 : JumpEnd); (8.91666666666667 : 32.875 : JumpStart); (9.08333333333333 : 32.875 : JumpEnd); (11.1354166666667 : 32.875 : JumpStart); (11.3020833333333 : 32.875 : JumpEnd); (11.5416666666667 : 32.875 : JumpStart); (11.7083333333333 : 32.875 : JumpEnd); (12.0104166666667 : 32.875 : JumpStart); (12.1770833333333 : 32.875 : JumpEnd); (12.4947886666667 : 32.875 : JumpStart); (12.6614553333333 : 32.875 : JumpEnd); (13.1471347291667 : 32.875 : JumpStart); (13.3138013958333 : 32.875 : JumpEnd); (13.6979191666667 : 32.875 : JumpStart); (13.8645858333333 : 32.875 : JumpEnd); (14.0416666666667 : 32.875 : JumpStart); (14.2083333333333 : 32.875 : JumpEnd); (14.2604161666667 : 32.875 : JumpStart); (14.5833333333333 : 32.875 : JumpEnd); (14.625 : 32.875); (14.625 : 31.8125); (15.0104166666667 : 31.8125 : JumpStart); (15.1770833333333 : 31.8125 : JumpEnd); (16.0416666666667 : 31.8125 : JumpStart); (16.3333333333333 : 31.8125 : JumpEnd); (17.2916666666667 : 31.8125 : JumpStart); (17.4583333333333 : 31.8125 : JumpEnd); (17.7916666666667 : 31.8125 : JumpStart); (17.9583333333333 : 31.8125 : JumpEnd); (18.468748 : 31.8125); (18.468748 : 30.7516097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/currency/currency_purchaseOrder" />
+      <nodes>
+        <classShapeMoniker Id="858a9786-08e1-4159-8e54-856b65b8005f" />
+        <classShapeMoniker Id="f7f31485-c559-4415-824a-8a14c530f4bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 17.6939925130208); (11.7535744349011 : 17.9475669479219 : JumpStart); (11.8714255650989 : 18.0654180781197 : JumpEnd); (11.875 : 18.0689925130208); (17.4166666666667 : 18.0689925130208 : JumpStart); (17.5833333333333 : 18.0689925130208 : JumpEnd); (17.6875 : 18.0689925130208); (17.6875 : 26.9036548461538); (17.8160744349011 : 27.0322292810549 : JumpStart); (17.9339255650989 : 27.1500804112527 : JumpEnd); (18.0338451538462 : 27.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/docStatus/docStatus_purchaseOrder" />
+      <nodes>
+        <classShapeMoniker Id="abb197a8-be6b-433f-9e2e-86fb94dd4229" />
+        <classShapeMoniker Id="f7f31485-c559-4415-824a-8a14c530f4bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.2307124286358 : 22.6939925130208); (14.2848239349011 : 22.7481040192861 : JumpStart); (14.4026750650989 : 22.8659551494839 : JumpEnd); (14.4807124286358 : 22.9439925130208); (14.6041666666667 : 22.9439925130208 : JumpStart); (14.7708333333333 : 22.9439925130208 : JumpEnd); (15.0104166666667 : 22.9439925130208 : JumpStart); (15.1770833333333 : 22.9439925130208 : JumpEnd); (17.2916666666667 : 22.9439925130208 : JumpStart); (17.5833333333333 : 22.9439925130208 : JumpEnd); (17.625 : 22.9439925130208); (17.625 : 26.9073076923077); (17.8555246797576 : 27.8663888441336 : JumpStart); (17.8944753202425 : 28.0284401489219 : JumpEnd); (18 : 28.4674678986378)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_purchaseOrder" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="f7f31485-c559-4415-824a-8a14c530f4bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 29.9142569986979); (23.5 : 29.9142569986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/purchaseOrderLine/purchaseOrderLine_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 27.6089998372396); (23.6666666666667 : 27.6089998372396 : JumpStart); (23.8333333333333 : 27.6089998372396 : JumpEnd); (24.5416661666667 : 27.6089998372396 : JumpStart); (24.7083328333333 : 27.6089998372396 : JumpEnd); (26.4166666666667 : 27.6089998372396 : JumpStart); (26.5833333333333 : 27.6089998372396 : JumpEnd); (28.9166666666667 : 27.6089998372396 : JumpStart); (29.0833333333333 : 27.6089998372396 : JumpEnd); (29.1041666666667 : 27.6089998372396 : JumpStart); (29.2708333333333 : 27.6089998372396 : JumpEnd); (30.5 : 27.6089998372396); (30.5 : 31)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/purchaseOrderLine/purchaseOrderLine_inspectionLine" />
+      <nodes>
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+        <classShapeMoniker Id="acb8dc8d-c369-4fbc-b683-23f9cc851bd6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 21.9234081142328); (14.3107667878301 : 22.0644026057866 : JumpStart); (14.3767322121699 : 22.2174592638236 : JumpEnd); (14.6157826869491 : 22.7721175130208); (15.0104166666667 : 22.7721175130208 : JumpStart); (15.1770833333333 : 22.7721175130208 : JumpEnd); (17.2916666666667 : 22.7721175130208 : JumpStart); (17.5833333333333 : 22.7721175130208 : JumpEnd); (17.6041666666667 : 22.7721175130208 : JumpStart); (17.7708333333333 : 22.7721175130208 : JumpEnd); (20.0416616666667 : 22.7721175130208 : JumpStart); (20.2708333333333 : 22.7721175130208 : JumpEnd); (20.4166666666667 : 22.7721175130208 : JumpStart); (20.5833333333333 : 22.7721175130208 : JumpEnd); (20.625 : 22.7721175130208); (20.625 : 26.875); (20.6285744349011 : 26.8785744349011 : JumpStart); (20.7464255650989 : 26.9964255650989 : JumpEnd); (20.75 : 27)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 20.6627640165264); (14.2848239349011 : 20.6975879514275 : JumpStart); (14.4026750650989 : 20.8154390816253 : JumpEnd); (14.4374784964944 : 20.8502425130208); (17.4166666666667 : 20.8502425130208 : JumpStart); (17.5833333333333 : 20.8502425130208 : JumpEnd); (17.6041666666667 : 20.8502425130208 : JumpStart); (17.7708333333333 : 20.8502425130208 : JumpEnd); (20.0416616666667 : 20.8502425130208 : JumpStart); (20.2395808333333 : 20.8502425130208 : JumpEnd); (20.5625 : 20.8502425130208); (20.5625 : 26.8125); (20.6285744349011 : 26.8785744349011 : JumpStart); (20.7464255650989 : 26.9964255650989 : JumpEnd); (20.75 : 27)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineStatus/lineStatus_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="120048f2-ae1c-47c3-a840-d1697eef9e90" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 41.1594555664063); (14.2604166666667 : 41.1594555664063 : JumpStart); (14.4270833333333 : 41.1594555664063 : JumpEnd); (15.9166666666667 : 41.1594555664063 : JumpStart); (16.0833333333333 : 41.1594555664063 : JumpEnd); (17.7916666666667 : 41.1594555664063 : JumpStart); (17.9583333333333 : 41.1594555664063 : JumpEnd); (20.625 : 41.1594555664063); (20.625 : 36.5625); (20.5625 : 36.5625); (20.5625 : 31.7035139973958); (20.6041666666667 : 31.7035139973958 : JumpStart); (20.7708333333333 : 31.7035139973958 : JumpEnd); (21.75 : 31.7035139973958); (21.75 : 31.0785139973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineType/lineType_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="d723ecef-6d34-49c9-b467-f649fa562095" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20 : 29.0008048502604); (20.0416616666667 : 29.0008048502604 : JumpStart); (20.2708333333333 : 29.0008048502604 : JumpEnd); (20.2916666666667 : 29.0008048502604 : JumpStart); (20.5833333333333 : 29.0008048502604 : JumpEnd); (20.75 : 29.0008048502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/purchaseOrder/purchaseOrder_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="f7f31485-c559-4415-824a-8a14c530f4bc" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 49.0392976888021); (12.09375 : 49.0392976888021); (12.09375 : 38.8285953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/Role/Role_applicationAccess" />
+      <nodes>
+        <classShapeMoniker Id="2b0b1c37-8e05-4c87-a4c2-97a3494b78df" />
+        <classShapeMoniker Id="d5ad7882-a5db-468b-aa44-6c99820270d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 20.7612939453125); (7.5 : 28); (7.91666666666667 : 28 : JumpStart); (8.08333333333333 : 28 : JumpEnd); (8.75 : 28); (8.75 : 29.1458154296875); (8.79166666666667 : 29.1458154296875 : JumpStart); (8.95833333333333 : 29.1458154296875 : JumpEnd); (9 : 29.1458154296875); (9 : 36); (8.875 : 36); (8.875 : 49.0392976888021); (9.25 : 49.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/Application1/Application1_Role" />
+      <nodes>
+        <classShapeMoniker Id="32cb752b-f385-4cfe-b36c-20915232cf48" />
+        <classShapeMoniker Id="2b0b1c37-8e05-4c87-a4c2-97a3494b78df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 34.0145587244466); (3.16666666666667 : 34.0145587244466 : JumpStart); (3.33333333333333 : 34.0145587244466 : JumpEnd); (3.375 : 34.0145587244466); (3.375 : 33.1875); (5.65595011934417 : 33.1875 : JumpStart); (6.19270833333333 : 33.1875 : JumpEnd); (8.32291416666667 : 33.1875 : JumpStart); (8.64583333333333 : 33.1875 : JumpEnd); (8.72916666666667 : 33.1875 : JumpStart); (8.89583333333333 : 33.1875 : JumpEnd); (8.91666666666667 : 33.1875 : JumpStart); (9.08333333333333 : 33.1875 : JumpEnd); (11.1354166666667 : 33.1875 : JumpStart); (11.4583333333333 : 33.1875 : JumpEnd); (11.5416666666667 : 33.1875 : JumpStart); (11.7083333333333 : 33.1875 : JumpEnd); (12.0104166666667 : 33.1875 : JumpStart); (12.1770833333333 : 33.1875 : JumpEnd); (12.4947886666667 : 33.1875 : JumpStart); (12.6614553333333 : 33.1875 : JumpEnd); (13.2304680625 : 33.1875); (13.2304680625 : 30.9439111328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/currency/currency_salesOrder" />
+      <nodes>
+        <classShapeMoniker Id="858a9786-08e1-4159-8e54-856b65b8005f" />
+        <classShapeMoniker Id="510f5321-39bc-4d9d-9cd3-17c5b07f559a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 34.2600953650841); (5.60249153726904 : 33.8947434655809 : JumpStart); (5.64750846273096 : 33.7342714923278 : JumpEnd); (5.72749153726904 : 33.4491555794512 : JumpStart); (5.77250846273096 : 33.2886836061981 : JumpEnd); (5.83595935907452 : 33.0625); (5.94791666666667 : 33.0625 : JumpStart); (6.19270833333333 : 33.0625 : JumpEnd); (8.32291416666667 : 33.0625 : JumpStart); (8.64583333333333 : 33.0625 : JumpEnd); (8.91666666666667 : 33.0625 : JumpStart); (9.08333333333333 : 33.0625 : JumpEnd); (11.1354166666667 : 33.0625 : JumpStart); (11.4583333333333 : 33.0625 : JumpEnd); (11.5416666666667 : 33.0625 : JumpStart); (11.7083333333333 : 33.0625 : JumpEnd); (12.0104166666667 : 33.0625 : JumpStart); (12.1770833333333 : 33.0625 : JumpEnd); (12.4947886666667 : 33.0625 : JumpStart); (12.6614553333333 : 33.0625 : JumpEnd); (13.2304680625 : 33.0625); (13.2304680625 : 30.9439111328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_salesOrder" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="510f5321-39bc-4d9d-9cd3-17c5b07f559a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.35156 : 17.6939925130208); (11.35156 : 29.0520654296875); (11.5416666666667 : 29.0520654296875 : JumpStart); (12.1770833333333 : 29.0520654296875 : JumpEnd); (12.25 : 29.0520654296875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/docStatus/docStatus_salesOrder" />
+      <nodes>
+        <classShapeMoniker Id="abb197a8-be6b-433f-9e2e-86fb94dd4229" />
+        <classShapeMoniker Id="510f5321-39bc-4d9d-9cd3-17c5b07f559a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.2008376123047 : 22.6939925130208); (14.2008376123047 : 27.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_salesOrder" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="510f5321-39bc-4d9d-9cd3-17c5b07f559a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.25 : 23.4439925130208); (10.25 : 24.40625); (11.1354166666667 : 24.40625 : JumpStart); (11.4348933333333 : 24.40625 : JumpEnd); (11.5416666666667 : 24.40625 : JumpStart); (11.7083333333333 : 24.40625 : JumpEnd); (11.7291666666667 : 24.40625 : JumpStart); (11.8958333333333 : 24.40625 : JumpEnd); (12 : 24.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/application/application_shoppingCart" />
+      <nodes>
+        <classShapeMoniker Id="3cba3f37-3c86-4c25-8ac4-5a35ecead38f" />
+        <classShapeMoniker Id="5e66e665-4b8e-4d18-bafe-4b3eeb6ad097" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.39062575); (5.66057747588887 : 33.39062575 : JumpStart); (6.02083333333333 : 33.39062575 : JumpEnd); (6.02604166666667 : 33.39062575 : JumpStart); (6.19270833333333 : 33.39062575 : JumpEnd); (8.32291416666667 : 33.39062575 : JumpStart); (8.64583333333333 : 33.39062575 : JumpEnd); (8.66666666666667 : 33.39062575 : JumpStart); (8.89583333333333 : 33.39062575 : JumpEnd); (8.91666666666667 : 33.39062575 : JumpStart); (9.08333333333333 : 33.39062575 : JumpEnd); (11.1354166666667 : 33.39062575 : JumpStart); (11.4583333333333 : 33.39062575 : JumpEnd); (11.5416666666667 : 33.39062575 : JumpStart); (11.7083333333333 : 33.39062575 : JumpEnd); (12.09375 : 33.39062575); (12.09375 : 25.8285953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_shoppingCart" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="5e66e665-4b8e-4d18-bafe-4b3eeb6ad097" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 40.6013749186198); (8.32291416666667 : 40.6013749186198 : JumpStart); (8.52083333333333 : 40.6013749186198 : JumpEnd); (8.57291666666667 : 40.6013749186198 : JumpStart); (8.73958333333333 : 40.6013749186198 : JumpEnd); (9 : 40.6013749186198)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/warehouse/warehouse_stock" />
+      <nodes>
+        <classShapeMoniker Id="25f2a4d0-aae6-457f-8141-22b43fe61bca" />
+        <classShapeMoniker Id="ca89b091-f406-40a6-a59e-be2bc299859e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 45.9719962565104); (12.25 : 45.9719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/language/language_translate" />
+      <nodes>
+        <classShapeMoniker Id="3a38d27c-60c9-468e-9406-812024e581fa" />
+        <classShapeMoniker Id="8451b461-9cdf-45c2-a49f-ba523a039e93" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.5916214488932); (14.2604161666667 : 22.5916214488932 : JumpStart); (14.4270828333333 : 22.5916214488932 : JumpEnd); (14.454657902956 : 22.5916214488932 : JumpStart); (14.7708333333333 : 22.5916214488932 : JumpEnd); (15.0104166666667 : 22.5916214488932 : JumpStart); (15.1770833333333 : 22.5916214488932 : JumpEnd); (17.2916666666667 : 22.5916214488932 : JumpStart); (17.5833333333333 : 22.5916214488932 : JumpEnd); (17.6041666666667 : 22.5916214488932 : JumpStart); (17.7708333333333 : 22.5916214488932 : JumpEnd); (20.0416616666667 : 22.5916214488932 : JumpStart); (20.2708333333333 : 22.5916214488932 : JumpEnd); (20.4166666666667 : 22.5916214488932 : JumpStart); (20.6458333333333 : 22.5916214488932 : JumpEnd); (22.8541666666667 : 22.5916214488932 : JumpStart); (23.0208333333333 : 22.5916214488932 : JumpEnd); (23.125 : 22.5916214488932); (23.125 : 24.875); (23.2291666666667 : 24.875 : JumpStart); (23.3958333333333 : 24.875 : JumpEnd); (23.5104171666667 : 24.875 : JumpStart); (23.6770838333333 : 24.875 : JumpEnd); (25.9166666666667 : 24.875 : JumpStart); (26.0833333333333 : 24.875 : JumpEnd); (26.5 : 24.875); (26.5 : 37.375); (27.75 : 37.375); (27.75 : 37.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_transport" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="9fe592ef-4fc2-461b-8f03-227836867f1d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 36.3904294547526); (17.7916666666667 : 36.3904294547526 : JumpStart); (17.9583333333333 : 36.3904294547526 : JumpEnd); (20.0416616666667 : 36.3904294547526 : JumpStart); (20.2395808333333 : 36.3904294547526 : JumpEnd); (20.25 : 36.3904294547526); (20.25 : 36.5016097005208); (20.4166666666667 : 36.5016097005208 : JumpStart); (20.5833333333333 : 36.5016097005208 : JumpEnd); (21.75 : 36.5016097005208); (21.75 : 37.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/project/project_transportProject" />
+      <nodes>
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+        <classShapeMoniker Id="23135262-735c-4393-a887-f0c8ec54a0c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20 : 42.3023456888021); (24.7916666666667 : 42.3023456888021 : JumpStart); (24.9583333333333 : 42.3023456888021 : JumpEnd); (27.75 : 42.3023456888021); (27.75 : 40.6170068359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/transportType/transportType_transport" />
+      <nodes>
+        <classShapeMoniker Id="efdb45a1-322e-4bbb-9be9-834f81fc8299" />
+        <classShapeMoniker Id="9fe592ef-4fc2-461b-8f03-227836867f1d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20 : 41.8481938645834); (21.75 : 41.8481938645834); (21.75 : 38.7612939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/transportType/transportType_transportProject" />
+      <nodes>
+        <classShapeMoniker Id="efdb45a1-322e-4bbb-9be9-834f81fc8299" />
+        <classShapeMoniker Id="23135262-735c-4393-a887-f0c8ec54a0c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 31.5689925130208); (4.5 : 32.8125); (4.68229266666667 : 32.8125 : JumpStart); (4.84895933333333 : 32.8125 : JumpEnd); (4.94791866666667 : 32.8125 : JumpStart); (5.11458533333333 : 32.8125 : JumpEnd); (5.21354466666667 : 32.8125 : JumpStart); (5.38021133333333 : 32.8125 : JumpEnd); (5.79166666666667 : 32.8125 : JumpStart); (6.2106933811972 : 32.8125 : JumpEnd); (8.32291416666667 : 32.8125 : JumpStart); (8.64583333333333 : 32.8125 : JumpEnd); (8.91666666666667 : 32.8125 : JumpStart); (9.08333333333333 : 32.8125 : JumpEnd); (11.1354166666667 : 32.8125 : JumpStart); (11.3020833333333 : 32.8125 : JumpEnd); (11.5416666666667 : 32.8125 : JumpStart); (11.7083333333333 : 32.8125 : JumpEnd); (12.0104166666667 : 32.8125 : JumpStart); (12.1770833333333 : 32.8125 : JumpEnd); (12.4947886666667 : 32.8125 : JumpStart); (12.6614553333333 : 32.8125 : JumpEnd); (13.1471347291667 : 32.8125 : JumpStart); (13.3138013958333 : 32.8125 : JumpEnd); (13.6979191666667 : 32.8125 : JumpStart); (13.8645858333333 : 32.8125 : JumpEnd); (14.0416666666667 : 32.8125 : JumpStart); (14.2083333333333 : 32.8125 : JumpEnd); (14.2604161666667 : 32.8125 : JumpStart); (14.5833333333333 : 32.8125 : JumpEnd); (14.75 : 32.8125); (14.75 : 34.0208968098958); (14.7916666666667 : 34.0208968098958 : JumpStart); (15.0208333333333 : 34.0208968098958 : JumpEnd); (17.4166666666667 : 34.0208968098958 : JumpStart); (17.5833333333333 : 34.0208968098958 : JumpEnd); (17.625 : 34.0208968098958); (17.625 : 32.1875); (17.7916666666667 : 32.1875 : JumpStart); (17.9583333333333 : 32.1875 : JumpEnd); (19.5494791666667 : 32.1875 : JumpStart); (19.7161458333333 : 32.1875 : JumpEnd); (19.8257051282051 : 32.1875 : JumpStart); (19.9923717948718 : 32.1875 : JumpEnd); (20.0416616666667 : 32.1875 : JumpStart); (20.2708333333333 : 32.1875 : JumpEnd); (20.4166666666667 : 32.1875 : JumpStart); (20.7708333333333 : 32.1875 : JumpEnd); (21.5338536666667 : 32.1875 : JumpStart); (21.7005203333333 : 32.1875 : JumpEnd); (21.9322926666667 : 32.1875 : JumpStart); (22.0989593333333 : 32.1875 : JumpEnd); (22.7916666666667 : 32.1875 : JumpStart); (22.9583333333333 : 32.1875 : JumpEnd); (23 : 32.1875); (23 : 35.3285139973958); (23.2291666666667 : 35.3285139973958 : JumpStart); (23.4583333333333 : 35.3285139973958 : JumpEnd); (23.5104171666667 : 35.3285139973958 : JumpStart); (23.7708333333333 : 35.3285139973958 : JumpEnd); (24.3248696666667 : 35.3285139973958 : JumpStart); (24.4915363333333 : 35.3285139973958 : JumpEnd); (26.1666666666667 : 35.3285139973958 : JumpStart); (26.3333333333333 : 35.3285139973958 : JumpEnd); (26.4166666666667 : 35.3285139973958 : JumpStart); (26.5833333333333 : 35.3285139973958 : JumpEnd); (28.9166666666667 : 35.3285139973958 : JumpStart); (29.0833333333333 : 35.3285139973958 : JumpEnd); (29.1041666666667 : 35.3285139973958 : JumpStart); (29.2708333333333 : 35.3285139973958 : JumpEnd); (30.4166666666667 : 35.3285139973958 : JumpStart); (30.5833333333333 : 35.3285139973958 : JumpEnd); (31.875 : 35.3285139973958); (31.875 : 33.8662019856771); (31.9166666666667 : 33.8662019856771 : JumpStart); (32.0833333333333 : 33.8662019856771 : JumpEnd); (32.25 : 33.8662019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_colliLine" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="8fb8c000-c0df-418f-9f16-c028577d22b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.031252 : 31.5689925130208); (5.031252 : 33.15625); (5.66666666666667 : 33.15625 : JumpStart); (6.19270833333333 : 33.15625 : JumpEnd); (8.32291416666667 : 33.15625 : JumpStart); (8.64583333333333 : 33.15625 : JumpEnd); (8.72916666666667 : 33.15625 : JumpStart); (8.89583333333333 : 33.15625 : JumpEnd); (8.91666666666667 : 33.15625 : JumpStart); (9.08333333333333 : 33.15625 : JumpEnd); (11.1354166666667 : 33.15625 : JumpStart); (11.4583333333333 : 33.15625 : JumpEnd); (11.5416666666667 : 33.15625 : JumpStart); (11.7083333333333 : 33.15625 : JumpEnd); (12.0104166666667 : 33.15625 : JumpStart); (12.1770833333333 : 33.15625 : JumpEnd); (12.4947886666667 : 33.15625 : JumpStart); (12.6614553333333 : 33.15625 : JumpEnd); (13.6979191666667 : 33.15625 : JumpStart); (13.8645858333333 : 33.15625 : JumpEnd); (14.0416666666667 : 33.15625 : JumpStart); (14.2083333333333 : 33.15625 : JumpEnd); (14.2604161666667 : 33.15625 : JumpStart); (14.4270828333333 : 33.15625 : JumpEnd); (14.625 : 33.15625); (14.625 : 34.2083968098958); (14.8541666666667 : 34.2083968098958 : JumpStart); (15.0208333333333 : 34.2083968098958 : JumpEnd); (17.5 : 34.2083968098958); (17.5 : 32.0625); (17.7916666666667 : 32.0625 : JumpStart); (17.9583333333333 : 32.0625 : JumpEnd); (19.5494791666667 : 32.0625 : JumpStart); (19.7161458333333 : 32.0625 : JumpEnd); (20.0416616666667 : 32.0625 : JumpStart); (20.3030128205128 : 32.0625 : JumpEnd); (20.4166666666667 : 32.0625 : JumpStart); (20.7708333333333 : 32.0625 : JumpEnd); (21.5338536666667 : 32.0625 : JumpStart); (21.7005203333333 : 32.0625 : JumpEnd); (22.7916666666667 : 32.0625 : JumpStart); (22.9583333333333 : 32.0625 : JumpEnd); (23.125 : 32.0625); (23.125 : 35.3910139973958); (23.2291666666667 : 35.3910139973958 : JumpStart); (23.4583333333333 : 35.3910139973958 : JumpEnd); (23.5104171666667 : 35.3910139973958 : JumpStart); (23.7708333333333 : 35.3910139973958 : JumpEnd); (24.3248696666667 : 35.3910139973958 : JumpStart); (24.4915363333333 : 35.3910139973958 : JumpEnd); (26.1666666666667 : 35.3910139973958 : JumpStart); (26.3333333333333 : 35.3910139973958 : JumpEnd); (26.4166666666667 : 35.3910139973958 : JumpStart); (26.5833333333333 : 35.3910139973958 : JumpEnd); (28.9166666666667 : 35.3910139973958 : JumpStart); (29.0833333333333 : 35.3910139973958 : JumpEnd); (29.1041666666667 : 35.3910139973958 : JumpStart); (29.2708333333333 : 35.3910139973958 : JumpEnd); (30.4166666666667 : 35.3910139973958 : JumpStart); (30.5833333333333 : 35.3910139973958 : JumpEnd); (32 : 35.3910139973958); (32 : 33.1518489928385); (32.25 : 33.1518489928385)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_colliLine1" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="8fb8c000-c0df-418f-9f16-c028577d22b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 30.9374995); (5.79166666666667 : 30.9374995 : JumpStart); (6.19270833333333 : 30.9374995 : JumpEnd); (6.25 : 30.9374995); (6.25 : 27.75); (6.32291666666667 : 27.75 : JumpStart); (6.48958333333333 : 27.75 : JumpEnd); (6.97916666666667 : 27.75 : JumpStart); (7.14583333333333 : 27.75 : JumpEnd); (7.41666666666667 : 27.75 : JumpStart); (7.58333333333333 : 27.75 : JumpEnd); (7.91666666666667 : 27.75 : JumpStart); (8.08333333333333 : 27.75 : JumpEnd); (8.41666666666667 : 27.75 : JumpStart); (8.58333333333333 : 27.75 : JumpEnd); (8.875 : 27.75); (8.875 : 29.3958154296875); (8.91666666666667 : 29.3958154296875 : JumpStart); (9.08333333333333 : 29.3958154296875 : JumpEnd); (11.1354166666667 : 29.3958154296875 : JumpStart); (11.3020833333333 : 29.3958154296875 : JumpEnd); (11.5416666666667 : 29.3958154296875 : JumpStart); (11.7083333333333 : 29.3958154296875 : JumpEnd); (11.75 : 29.3958154296875); (11.75 : 26.8189925130208); (11.8541666666667 : 26.8189925130208 : JumpStart); (12.1770833333333 : 26.8189925130208 : JumpEnd); (14.1175042789714 : 26.8189925130208 : JumpStart); (14.4270828333333 : 26.8189925130208 : JumpEnd); (14.6041666666667 : 26.8189925130208 : JumpStart); (14.7708333333333 : 26.8189925130208 : JumpEnd); (15.0104166666667 : 26.8189925130208 : JumpStart); (15.1770833333333 : 26.8189925130208 : JumpEnd); (16.6979191666667 : 26.8189925130208 : JumpStart); (16.8645858333333 : 26.8189925130208 : JumpEnd); (17.2916666666667 : 26.8189925130208 : JumpStart); (17.7708333333333 : 26.8189925130208 : JumpEnd); (17.7916666666667 : 26.8189925130208 : JumpStart); (17.9583333333333 : 26.8189925130208 : JumpEnd); (20.0416616666667 : 26.8189925130208 : JumpStart); (20.5833333333333 : 26.8189925130208 : JumpEnd); (20.6041666666667 : 26.8189925130208 : JumpStart); (20.7708333333333 : 26.8189925130208 : JumpEnd); (23.2291666666667 : 26.8189925130208 : JumpStart); (23.3958333333333 : 26.8189925130208 : JumpEnd); (23.5104171666667 : 26.8189925130208 : JumpStart); (23.8333333333333 : 26.8189925130208 : JumpEnd); (24.6249995 : 26.8189925130208); (24.6249995 : 28.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 30.375); (4.5 : 29.9439925130208); (5.66666666666667 : 29.9439925130208 : JumpStart); (6.19270833333333 : 29.9439925130208 : JumpEnd); (6.3125 : 29.9439925130208); (6.3125 : 28.125); (6.32291666666667 : 28.125 : JumpStart); (6.48958333333333 : 28.125 : JumpEnd); (6.97916666666667 : 28.125 : JumpStart); (7.14583333333333 : 28.125 : JumpEnd); (7.91666666666667 : 28.125 : JumpStart); (8.08333333333333 : 28.125 : JumpEnd); (8.8125 : 28.125); (8.8125 : 29.1458154296875); (8.85416666666667 : 29.1458154296875 : JumpStart); (9.02083333333333 : 29.1458154296875 : JumpEnd); (11.1354166666667 : 29.1458154296875 : JumpStart); (11.3020833333333 : 29.1458154296875 : JumpEnd); (11.5416666666667 : 29.1458154296875 : JumpStart); (11.8958333333333 : 29.1458154296875 : JumpEnd); (12 : 29.1458154296875); (12 : 27); (12.0104166666667 : 27 : JumpStart); (12.1770833333333 : 27 : JumpEnd); (14.1175042789714 : 27 : JumpStart); (14.4270828333333 : 27 : JumpEnd); (14.6041666666667 : 27 : JumpStart); (14.7708333333333 : 27 : JumpEnd); (15.0104166666667 : 27 : JumpStart); (15.1770833333333 : 27 : JumpEnd); (16.6979191666667 : 27 : JumpStart); (16.8645858333333 : 27 : JumpEnd); (17.2916666666667 : 27 : JumpStart); (17.9583333333333 : 27 : JumpEnd); (20.0416616666667 : 27 : JumpStart); (20.3645833333333 : 27 : JumpEnd); (20.4375 : 27); (20.4375 : 29.0705089986979); (20.75 : 29.0705089986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.968748 : 31.5689925130208); (3.968748 : 33.09375); (5.21354466666667 : 33.09375 : JumpStart); (5.38021133333333 : 33.09375 : JumpEnd); (5.66666666666667 : 33.09375 : JumpStart); (6.19270833333333 : 33.09375 : JumpEnd); (8.32291416666667 : 33.09375 : JumpStart); (8.64583333333333 : 33.09375 : JumpEnd); (8.91666666666667 : 33.09375 : JumpStart); (9.08333333333333 : 33.09375 : JumpEnd); (11.1354166666667 : 33.09375 : JumpStart); (11.4583333333333 : 33.09375 : JumpEnd); (11.5416666666667 : 33.09375 : JumpStart); (11.7083333333333 : 33.09375 : JumpEnd); (12.0104166666667 : 33.09375 : JumpStart); (12.1770833333333 : 33.09375 : JumpEnd); (12.4947886666667 : 33.09375 : JumpStart); (12.6614553333333 : 33.09375 : JumpEnd); (13.1471347291667 : 33.09375 : JumpStart); (13.3138013958333 : 33.09375 : JumpEnd); (13.6979191666667 : 33.09375 : JumpStart); (13.8645858333333 : 33.09375 : JumpEnd); (14.0416666666667 : 33.09375 : JumpStart); (14.2083333333333 : 33.09375 : JumpEnd); (14.2604161666667 : 33.09375 : JumpStart); (14.4270828333333 : 33.09375 : JumpEnd); (14.6041666666667 : 33.09375 : JumpStart); (14.8958333333333 : 33.09375 : JumpEnd); (14.9375 : 33.09375); (14.9375 : 40.8814111328125); (15.9166666666667 : 40.8814111328125 : JumpStart); (16.0833333333333 : 40.8814111328125 : JumpEnd); (17.7916666666667 : 40.8814111328125 : JumpStart); (17.9583333333333 : 40.8814111328125 : JumpEnd); (20.5416666666667 : 40.8814111328125 : JumpStart); (20.7083333333333 : 40.8814111328125 : JumpEnd); (21.6666666666667 : 40.8814111328125 : JumpStart); (21.8333333333333 : 40.8814111328125 : JumpEnd); (23.5 : 40.8814111328125); (23.5 : 39.4054996744792); (23.6041666666667 : 39.4054996744792 : JumpStart); (23.7708333333333 : 39.4054996744792 : JumpEnd); (25.7604161666667 : 39.4054996744792 : JumpStart); (25.9270828333333 : 39.4054996744792 : JumpEnd); (26.1666666666667 : 39.4054996744792 : JumpStart); (26.3333333333333 : 39.4054996744792 : JumpEnd); (26.375 : 39.4054996744792); (26.375 : 39.0585034179688); (26.75 : 39.0585034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_transport" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="9fe592ef-4fc2-461b-8f03-227836867f1d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.031252 : 30.375); (5.031252 : 30.0689925130208); (5.75 : 30.0689925130208); (5.75 : 24); (6.02604166666667 : 24 : JumpStart); (6.19270833333333 : 24 : JumpEnd); (7.41666666666667 : 24 : JumpStart); (7.58333333333333 : 24 : JumpEnd); (10.1666666666667 : 24 : JumpStart); (10.3333333333333 : 24 : JumpEnd); (11.1354166666667 : 24 : JumpStart); (11.4348933333333 : 24 : JumpEnd); (11.5416666666667 : 24 : JumpStart); (11.7083333333333 : 24 : JumpEnd); (11.7291666666667 : 24 : JumpStart); (12.1770833333333 : 24 : JumpEnd); (14.1175042789714 : 24 : JumpStart); (14.4270828333333 : 24 : JumpEnd); (14.6041666666667 : 24 : JumpStart); (14.7708333333333 : 24 : JumpEnd); (15.0104166666667 : 24 : JumpStart); (15.1770833333333 : 24 : JumpEnd); (16.6979191666667 : 24 : JumpStart); (16.8645858333333 : 24 : JumpEnd); (17.2916666666667 : 24 : JumpStart); (17.7708333333333 : 24 : JumpEnd); (17.7916666666667 : 24 : JumpStart); (17.9583333333333 : 24 : JumpEnd); (20.0416616666667 : 24 : JumpStart); (20.2708333333333 : 24 : JumpEnd); (20.4375 : 24); (20.4375 : 24.9719962565104); (20.4791666666667 : 24.9719962565104 : JumpStart); (20.7083333333333 : 24.9719962565104 : JumpEnd); (20.75 : 24.9719962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_unitOfMeasureLink" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="1b9b8a56-596f-4a41-a690-fed4a5532258" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20 : 25.6627640165264); (20.0775608350975 : 25.7747963338894 : JumpStart); (20.2349341649025 : 26.00211336583 : JumpEnd); (20.28125 : 26.0690140165264); (20.28125 : 29.0705089986979); (20.2916666666667 : 29.0705089986979 : JumpStart); (20.5833333333333 : 29.0705089986979 : JumpEnd); (20.75 : 29.0705089986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasureOrg/unitOfMeasureOrg_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="98595313-84fd-4fe2-8b95-ffe31c6fdd14" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20 : 25.0344962565104); (20.0416616666667 : 25.0344962565104 : JumpStart); (20.2708333333333 : 25.0344962565104 : JumpEnd); (20.2916666666667 : 25.0344962565104 : JumpStart); (20.7083333333333 : 25.0344962565104 : JumpEnd); (20.75 : 25.0344962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasureOrg/unitOfMeasureOrg_unitOfMeasureLink" />
+      <nodes>
+        <classShapeMoniker Id="98595313-84fd-4fe2-8b95-ffe31c6fdd14" />
+        <classShapeMoniker Id="1b9b8a56-596f-4a41-a690-fed4a5532258" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 19.700538077474); (11.2682266666667 : 19.700538077474 : JumpStart); (11.4348933333333 : 19.700538077474 : JumpEnd); (11.5 : 19.700538077474); (11.5 : 21.3189925130208); (11.7291666666667 : 21.3189925130208 : JumpStart); (12.1770833333333 : 21.3189925130208 : JumpEnd); (14.2604161666667 : 21.3189925130208 : JumpStart); (14.4270828333333 : 21.3189925130208 : JumpEnd); (14.6041666666667 : 21.3189925130208 : JumpStart); (14.7708333333333 : 21.3189925130208 : JumpEnd); (17.375 : 21.3189925130208); (17.375 : 32.25); (17.4166666666667 : 32.25 : JumpStart); (17.5833333333333 : 32.25 : JumpEnd); (17.6666666666667 : 32.25 : JumpStart); (17.9583333333333 : 32.25 : JumpEnd); (19 : 32.25); (19 : 32.375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_contactPerson" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.34375 : 19.125); (9.34375 : 14.0104484049479); (11.7291666666667 : 14.0104484049479 : JumpStart); (11.8958333333333 : 14.0104484049479 : JumpEnd); (12 : 14.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_Profile" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="626290be-8481-413c-adc8-8e441f092c08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 20.5391132324219); (11.2682266666667 : 20.5391132324219 : JumpStart); (11.5833333333333 : 20.5391132324219 : JumpEnd); (11.7291666666667 : 20.5391132324219 : JumpStart); (12.0833333333333 : 20.5391132324219 : JumpEnd); (12.09375 : 20.5391132324219); (12.09375 : 24.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_shoppingCart" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="5e66e665-4b8e-4d18-bafe-4b3eeb6ad097" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 20.0681469726563); (9.25 : 20.0681469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/Application1/Application1_User" />
+      <nodes>
+        <classShapeMoniker Id="32cb752b-f385-4cfe-b36c-20915232cf48" />
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 48.6133963444011); (12.0104166666667 : 48.6133963444011 : JumpStart); (12.1770833333333 : 48.6133963444011 : JumpEnd); (16 : 48.6133963444011); (16 : 39.0689925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/Role/Role_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="2b0b1c37-8e05-4c87-a4c2-97a3494b78df" />
+        <classShapeMoniker Id="1ea99e46-500f-431d-bffb-f99981ed1355" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 20.7487570211589); (11.2682266666667 : 20.7487570211589 : JumpStart); (11.5833333333333 : 20.7487570211589 : JumpEnd); (11.625 : 20.7487570211589); (11.625 : 20.9439925130208); (11.7291666666667 : 20.9439925130208 : JumpStart); (12.1770833333333 : 20.9439925130208 : JumpEnd); (14.2604161666667 : 20.9439925130208 : JumpStart); (14.4270828333333 : 20.9439925130208 : JumpEnd); (14.6875 : 20.9439925130208); (14.6875 : 37.625); (14.8541666666667 : 37.625 : JumpStart); (15.0208333333333 : 37.625 : JumpEnd); (16 : 37.625); (16 : 37.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="1ea99e46-500f-431d-bffb-f99981ed1355" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7806af6e-b3d7-4333-af0e-855eb4fd4038" absoluteBounds="15.25, 27.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DALPortalDataContext/batch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f85a3ae-6b05-446d-882a-43ca2095eee5" absoluteBounds="15.265, 27.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.125 : 30.0401025390625); (16.125 : 32.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/batch/batch_batchDocument" />
+      <nodes>
+        <classShapeMoniker Id="7806af6e-b3d7-4333-af0e-855eb4fd4038" />
+        <classShapeMoniker Id="87832b1a-0803-4146-94e0-8433772a1908" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 34.4694110839844); (5.625 : 34.4694110839844); (5.625 : 33.3125); (5.66666666666667 : 33.3125 : JumpStart); (5.95833333333333 : 33.3125 : JumpEnd); (6.02604166666667 : 33.3125 : JumpStart); (6.19270833333333 : 33.3125 : JumpEnd); (8.32291416666667 : 33.3125 : JumpStart); (8.64583333333333 : 33.3125 : JumpEnd); (8.66666666666667 : 33.3125 : JumpStart); (8.89583333333333 : 33.3125 : JumpEnd); (8.91666666666667 : 33.3125 : JumpStart); (9.08333333333333 : 33.3125 : JumpEnd); (11.1354166666667 : 33.3125 : JumpStart); (11.4583333333333 : 33.3125 : JumpEnd); (11.5416666666667 : 33.3125 : JumpStart); (11.7083333333333 : 33.3125 : JumpEnd); (12.4947886666667 : 33.3125 : JumpStart); (12.6614553333333 : 33.3125 : JumpEnd); (13.6979191666667 : 33.3125 : JumpStart); (13.8645858333333 : 33.3125 : JumpEnd); (14.125 : 33.3125); (14.125 : 32.0625); (14.2604161666667 : 32.0625 : JumpStart); (14.7708333333333 : 32.0625 : JumpEnd); (14.7916666666667 : 32.0625 : JumpStart); (14.9583333333333 : 32.0625 : JumpEnd); (16.25 : 32.0625); (16.25 : 30.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_batch" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="7806af6e-b3d7-4333-af0e-855eb4fd4038" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6de8710b-5991-4f86-97fa-996b167884c0" absoluteBounds="18.375, 36.875, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/DALPortalDataContext/delivery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1639ff8b-0de9-4eea-9804-eb9033e75a78" absoluteBounds="18.39, 37.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.29687875 : 34.7612939453125); (5.29687875 : 39.5344962565104); (8.32291416666667 : 39.5344962565104 : JumpStart); (8.52083333333333 : 39.5344962565104 : JumpEnd); (8.57291666666667 : 39.5344962565104 : JumpStart); (8.95833333333333 : 39.5344962565104 : JumpEnd); (11.6666666666667 : 39.5344962565104 : JumpStart); (11.8333333333333 : 39.5344962565104 : JumpEnd); (12.0104166666667 : 39.5344962565104 : JumpStart); (12.1770833333333 : 39.5344962565104 : JumpEnd); (14.2604166666667 : 39.5344962565104 : JumpStart); (14.4270833333333 : 39.5344962565104 : JumpEnd); (14.8541666666667 : 39.5344962565104 : JumpStart); (15.0208333333333 : 39.5344962565104 : JumpEnd); (15.9166666666667 : 39.5344962565104 : JumpStart); (16.0833333333333 : 39.5344962565104 : JumpEnd); (17.7916666666667 : 39.5344962565104 : JumpStart); (17.9583333333333 : 39.5344962565104 : JumpEnd); (18.375 : 39.5344962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_delivery" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 34.6939925130208); (1.75 : 39.7672506282552); (4.41666666666667 : 39.7672506282552 : JumpStart); (4.58333333333333 : 39.7672506282552 : JumpEnd); (8.32291416666667 : 39.7672506282552 : JumpStart); (8.52083333333333 : 39.7672506282552 : JumpEnd); (8.57291666666667 : 39.7672506282552 : JumpStart); (8.95833333333333 : 39.7672506282552 : JumpEnd); (11.6666666666667 : 39.7672506282552 : JumpStart); (11.8333333333333 : 39.7672506282552 : JumpEnd); (12.0104166666667 : 39.7672506282552 : JumpStart); (12.1770833333333 : 39.7672506282552 : JumpEnd); (14.2604166666667 : 39.7672506282552 : JumpStart); (14.4270833333333 : 39.7672506282552 : JumpEnd); (14.8541666666667 : 39.7672506282552 : JumpStart); (15.0208333333333 : 39.7672506282552 : JumpEnd); (15.9166666666667 : 39.7672506282552 : JumpStart); (16.0833333333333 : 39.7672506282552 : JumpEnd); (17.7916666666667 : 39.7672506282552 : JumpStart); (17.9583333333333 : 39.7672506282552 : JumpEnd); (18.375 : 39.7672506282552)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/currency/currency_delivery" />
+      <nodes>
+        <classShapeMoniker Id="858a9786-08e1-4159-8e54-856b65b8005f" />
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 16.7672456282552); (11.7291666666667 : 16.7672456282552 : JumpStart); (12.0208333333333 : 16.7672456282552 : JumpEnd); (17.4166666666667 : 16.7672456282552 : JumpStart); (17.5833333333333 : 16.7672456282552 : JumpEnd); (20.1562475 : 16.7672456282552); (20.1562475 : 36.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/docStatus/docStatus_delivery" />
+      <nodes>
+        <classShapeMoniker Id="abb197a8-be6b-433f-9e2e-86fb94dd4229" />
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.4267463847656); (14.2604161666667 : 22.4267463847656 : JumpStart); (14.5502655663247 : 22.4267463847656 : JumpEnd); (14.6041666666667 : 22.4267463847656 : JumpStart); (14.7708333333333 : 22.4267463847656 : JumpEnd); (15.0104166666667 : 22.4267463847656 : JumpStart); (15.1770833333333 : 22.4267463847656 : JumpEnd); (17.2916666666667 : 22.4267463847656 : JumpStart); (17.5833333333333 : 22.4267463847656 : JumpEnd); (17.6041666666667 : 22.4267463847656 : JumpStart); (17.7708333333333 : 22.4267463847656 : JumpEnd); (20.1875 : 22.4267463847656); (20.1875 : 36.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_delivery" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 36.013428663737); (17.7916666666667 : 36.013428663737 : JumpStart); (17.9583333333333 : 36.013428663737 : JumpEnd); (20.0416616666667 : 36.013428663737 : JumpStart); (20.2708333333333 : 36.013428663737 : JumpEnd); (20.3125 : 36.013428663737); (20.3125 : 36.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/project/project_delivery" />
+      <nodes>
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8c5086c8-56c9-4878-abf7-3f0af37e45bb" absoluteBounds="6.875, 4.125, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/DALPortalDataContext/vw_item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc3c6d9a-7fb8-4710-a9a1-3a3220710f5c" absoluteBounds="6.89, 4.585, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51d1f6d5-67be-49ba-a80b-f93318f36e1b" absoluteBounds="1.375, 9.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DALPortalDataContext/declarationOfPermanceDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5578b5a4-1878-4f22-9827-b53441a5e8c2" absoluteBounds="1.3900000000000001, 9.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d1da891-a87f-4432-8c46-22be61e2aea8" absoluteBounds="0.5, 5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DALPortalDataContext/vw_businessPartnerDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d438f5c-5938-466f-a5f7-50b60eecbd29" absoluteBounds="0.51500000000000012, 5.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b21c4c8-7d44-49e1-92d0-148149aeb0af" absoluteBounds="0.5, 2.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DALPortalDataContext/vw_BusinessPartnerDocumentsBusinessPartnerBusinessPartnerSearch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21318e69-5008-4617-af08-72d21b5f4bec" absoluteBounds="0.51500000000000012, 3.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00e6f566-dd72-4c85-bf51-445e489eb3cd" absoluteBounds="1.5, 7.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DALPortalDataContext/businessPartnerSearch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbf9286f-141e-439a-8573-28dec9eac51a" absoluteBounds="1.5150000000000001, 7.9600000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb2d3d79-c281-44e1-8c9e-741460583d9d" absoluteBounds="23.875, 40.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DALPortalDataContext/userRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ccf5402-c689-41d4-a6b6-4de7567cc800" absoluteBounds="23.89, 40.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(20 : 45.0681469726563); (24.875 : 45.0681469726563); (24.875 : 41.7035953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/applicationRole/applicationRole_userRole" />
+      <nodes>
+        <classShapeMoniker Id="6985ec84-a57f-4091-8a70-a6525224f209" />
+        <classShapeMoniker Id="cb2d3d79-c281-44e1-8c9e-741460583d9d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 36.7199597753906); (17.7916666666667 : 36.7199597753906 : JumpStart); (17.9583333333333 : 36.7199597753906 : JumpEnd); (20.0416616666667 : 36.7199597753906 : JumpStart); (20.3958333333333 : 36.7199597753906 : JumpEnd); (20.4166666666667 : 36.7199597753906 : JumpStart); (20.7083333333333 : 36.7199597753906 : JumpEnd); (21.6666666666667 : 36.7199597753906 : JumpStart); (21.8333333333333 : 36.7199597753906 : JumpEnd); (23.6041666666667 : 36.7199597753906 : JumpStart); (23.7708333333333 : 36.7199597753906 : JumpEnd); (24.9957676666667 : 36.7199597753906 : JumpStart); (25.1624343333333 : 36.7199597753906 : JumpEnd); (25.8437495 : 36.7199597753906); (25.8437495 : 40.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/project/project_userRole" />
+      <nodes>
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+        <classShapeMoniker Id="cb2d3d79-c281-44e1-8c9e-741460583d9d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 20.1198256549479); (11.2682266666667 : 20.1198256549479 : JumpStart); (11.5833333333333 : 20.1198256549479 : JumpEnd); (11.7291666666667 : 20.1198256549479 : JumpStart); (11.8958333333333 : 20.1198256549479 : JumpEnd); (12 : 20.1198256549479); (12 : 21.125); (12.0104166666667 : 21.125 : JumpStart); (12.1770833333333 : 21.125 : JumpEnd); (14.2604161666667 : 21.125 : JumpStart); (14.4270828333333 : 21.125 : JumpEnd); (14.6041666666667 : 21.125 : JumpStart); (14.7708333333333 : 21.125 : JumpEnd); (17.4166666666667 : 21.125 : JumpStart); (17.5833333333333 : 21.125 : JumpEnd); (17.6041666666667 : 21.125 : JumpStart); (17.7708333333333 : 21.125 : JumpEnd); (20.0416616666667 : 21.125 : JumpStart); (20.2395808333333 : 21.125 : JumpEnd); (20.4166666666667 : 21.125 : JumpStart); (20.6458333333333 : 21.125 : JumpEnd); (23.5104171666667 : 21.125 : JumpStart); (23.6770838333333 : 21.125 : JumpEnd); (26 : 21.125); (26 : 25.125); (23.75 : 25.125); (23.75 : 28.25); (24.5416661666667 : 28.25 : JumpStart); (24.7083328333333 : 28.25 : JumpEnd); (26.25 : 28.25); (26.25 : 39.75); (25.9270828333333 : 39.75 : JumpStart); (25.7604161666667 : 39.75 : JumpEnd); (24.875 : 39.75); (24.875 : 40.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_userRole" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="cb2d3d79-c281-44e1-8c9e-741460583d9d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="940173ed-e849-42d8-8456-34e6d56b335e" absoluteBounds="0.5, 11.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DALPortalDataContext/vw_name_in_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66c21408-09c4-484f-b0d1-22c07bfb4eaa" absoluteBounds="0.51500000000000012, 12.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" absoluteBounds="12.375, 33.75, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/DALPortalDataContext/businessPartner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35688a7f-8381-4f56-ab16-1d4180fffe16" absoluteBounds="12.39, 34.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.375 : 34.6666984049479); (14.6041666666667 : 34.6666984049479 : JumpStart); (14.7708333333333 : 34.6666984049479 : JumpEnd); (14.8541666666667 : 34.6666984049479 : JumpStart); (15.0208333333333 : 34.6666984049479 : JumpEnd); (15.9166666666667 : 34.6666984049479 : JumpStart); (16.0833333333333 : 34.6666984049479 : JumpEnd); (17.4166666666667 : 34.6666984049479 : JumpStart); (17.5833333333333 : 34.6666984049479 : JumpEnd); (17.6666666666667 : 34.6666984049479 : JumpStart); (17.9583333333333 : 34.6666984049479 : JumpEnd); (18 : 34.6666984049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_contactPerson" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.375 : 33.75); (13.375 : 33.625); (13.6979191666667 : 33.625 : JumpStart); (13.8645858333333 : 33.625 : JumpEnd); (14.2604161666667 : 33.625 : JumpStart); (14.4270828333333 : 33.625 : JumpEnd); (14.5 : 33.625); (14.5 : 34.5008048502604); (14.6041666666667 : 34.5008048502604 : JumpStart); (14.7708333333333 : 34.5008048502604 : JumpEnd); (14.8541666666667 : 34.5008048502604 : JumpStart); (15.0208333333333 : 34.5008048502604 : JumpEnd); (15.9166666666667 : 34.5008048502604 : JumpStart); (16.0833333333333 : 34.5008048502604 : JumpEnd); (17.5 : 34.5008048502604); (17.5 : 35.9343082682292); (17.7916666666667 : 35.9343082682292 : JumpStart); (17.9583333333333 : 35.9343082682292 : JumpEnd); (20.0416616666667 : 35.9343082682292 : JumpStart); (20.2708333333333 : 35.9343082682292 : JumpEnd); (20.375 : 35.9343082682292); (20.375 : 34.5150275296224); (20.4791666666667 : 34.5150275296224 : JumpStart); (20.6458333333333 : 34.5150275296224 : JumpEnd); (20.75 : 34.5150275296224)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_goodsReceipt" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="e7d893f6-a702-4dec-98f4-2bf87e48e8a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 36.0104484049479); (14.6041666666667 : 36.0104484049479 : JumpStart); (14.8333333333333 : 36.0104484049479 : JumpEnd); (15 : 36.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_project" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="9836fbe4-c028-4959-bfc9-151958662467" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 36.9507332011719); (14.75 : 36.9507332011719); (14.75 : 34.875); (14.8541666666667 : 34.875 : JumpStart); (15.0208333333333 : 34.875 : JumpEnd); (15.9166666666667 : 34.875 : JumpStart); (16.0833333333333 : 34.875 : JumpEnd); (17.4166666666667 : 34.875 : JumpStart); (17.5833333333333 : 34.875 : JumpEnd); (17.75 : 34.875); (17.75 : 32.125); (17.7916666666667 : 32.125 : JumpStart); (17.9583333333333 : 32.125 : JumpEnd); (18.867187 : 32.125); (18.867187 : 30.7516097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_purchaseOrder" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="f7f31485-c559-4415-824a-8a14c530f4bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 37.4521235992839); (14.6041666666667 : 37.4521235992839 : JumpStart); (14.7708333333333 : 37.4521235992839 : JumpEnd); (14.8541666666667 : 37.4521235992839 : JumpStart); (15.0208333333333 : 37.4521235992839 : JumpEnd); (18.375 : 37.4521235992839)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_delivery" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.375 : 34.57812325); (11.375 : 34.57812325); (11.375 : 32.9375); (11.3020833333333 : 32.9375 : JumpStart); (11.1354166666667 : 32.9375 : JumpEnd); (9.08333333333333 : 32.9375 : JumpStart); (8.91666666666667 : 32.9375 : JumpEnd); (8.64583333333333 : 32.9375 : JumpStart); (8.32291416666667 : 32.9375 : JumpEnd); (6.19270833333333 : 32.9375 : JumpStart); (5.79166666666667 : 32.9375 : JumpEnd); (5.38021133333333 : 32.9375 : JumpStart); (5.21354466666667 : 32.9375 : JumpEnd); (5.11458533333333 : 32.9375 : JumpStart); (4.94791866666667 : 32.9375 : JumpEnd); (4.84895933333333 : 32.9375 : JumpStart); (4.68229266666667 : 32.9375 : JumpEnd); (4.05208133333333 : 32.9375 : JumpStart); (3.88541466666667 : 32.9375 : JumpEnd); (2.75 : 32.9375); (2.75 : 11.3285953776042); (3.625 : 11.3285953776042); (3.625 : 9.2612939453125); (2.5 : 9.2612939453125); (2.5 : 8.8862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_businessPartnerSearch" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="00e6f566-dd72-4c85-bf51-445e489eb3cd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.0842307692308 : 37.8285139973958); (13.0842307692308 : 38.0785139973958); (13.6796153846154 : 38.0785139973958); (13.6796153846154 : 37.8285139973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.4062505); (5.54166666666667 : 33.4062505 : JumpStart); (6.02083333333333 : 33.4062505 : JumpEnd); (6.02604166666667 : 33.4062505 : JumpStart); (6.19270833333333 : 33.4062505 : JumpEnd); (8.32291416666667 : 33.4062505 : JumpStart); (8.64583333333333 : 33.4062505 : JumpEnd); (8.66666666666667 : 33.4062505 : JumpStart); (8.89583333333333 : 33.4062505 : JumpEnd); (8.91666666666667 : 33.4062505 : JumpStart); (9.08333333333333 : 33.4062505 : JumpEnd); (11.1354166666667 : 33.4062505 : JumpStart); (11.4583333333333 : 33.4062505 : JumpEnd); (11.5416666666667 : 33.4062505 : JumpStart); (11.7083333333333 : 33.4062505 : JumpEnd); (12.4947886666667 : 33.4062505 : JumpStart); (12.6614553333333 : 33.4062505 : JumpEnd); (12.843748 : 33.4062505); (12.843748 : 33.75)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 27.3557579205604); (5.66666666666667 : 27.3557579205604 : JumpStart); (5.95833333333333 : 27.3557579205604 : JumpEnd); (6.02604166666667 : 27.3557579205604 : JumpStart); (6.19270833333333 : 27.3557579205604 : JumpEnd); (6.32291666666667 : 27.3557579205604 : JumpStart); (6.48958333333333 : 27.3557579205604 : JumpEnd); (6.97916666666667 : 27.3557579205604 : JumpStart); (7.14583333333333 : 27.3557579205604 : JumpEnd); (7.41666666666667 : 27.3557579205604 : JumpStart); (7.58333333333333 : 27.3557579205604 : JumpEnd); (7.91666666666667 : 27.3557579205604 : JumpStart); (8.08333333333333 : 27.3557579205604 : JumpEnd); (8.5 : 27.3557579205604); (8.5 : 28); (8.9375 : 28); (8.9375 : 31.1939111328125); (11.1354166666667 : 31.1939111328125 : JumpStart); (11.3020833333333 : 31.1939111328125 : JumpEnd); (11.5416666666667 : 31.1939111328125 : JumpStart); (11.7083333333333 : 31.1939111328125 : JumpEnd); (11.7916666666667 : 31.1939111328125 : JumpStart); (12.1770833333333 : 31.1939111328125 : JumpEnd); (13.1471347291667 : 31.1939111328125 : JumpStart); (13.3138013958333 : 31.1939111328125 : JumpEnd); (13.7812525 : 31.1939111328125); (13.7812525 : 33.75)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/companyGroup/companyGroup_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="acfb146e-9187-4f10-8182-f2ad70adfc61" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18 : 34.3233508300781); (17.9583333333333 : 34.3233508300781 : JumpStart); (17.6666666666667 : 34.3233508300781 : JumpEnd); (16.0833333333333 : 34.3233508300781 : JumpStart); (15.9166666666667 : 34.3233508300781 : JumpEnd); (15.0208333333333 : 34.3233508300781 : JumpStart); (14.8541666666667 : 34.3233508300781 : JumpEnd); (14.7708333333333 : 34.3233508300781 : JumpStart); (14.6041666666667 : 34.3233508300781 : JumpEnd); (14.5833333333333 : 34.3233508300781 : JumpStart); (14.4166666666667 : 34.3233508300781 : JumpEnd); (14.375 : 34.3233508300781)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/contactPerson/contactPerson_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 44.0969962565104); (11.6666666666667 : 44.0969962565104 : JumpStart); (11.8333333333333 : 44.0969962565104 : JumpEnd); (12.0104166666667 : 44.0969962565104 : JumpStart); (12.1770833333333 : 44.0969962565104 : JumpEnd); (14.34375 : 44.0969962565104); (14.34375 : 37.8285139973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/country/country_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="ec0ac019-3ae7-4a03-bd9d-f6e2498c9f5f" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.5 : 45.375); (10.5 : 44.9439925130208); (11.75 : 44.9439925130208); (11.75 : 35.4687505); (12.375 : 35.4687505)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/language/language_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="3a38d27c-60c9-468e-9406-812024e581fa" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 19.2812505); (11.2682266666667 : 19.2812505 : JumpStart); (11.4348933333333 : 19.2812505 : JumpEnd); (11.7291666666667 : 19.2812505 : JumpStart); (12.0208333333333 : 19.2812505 : JumpEnd); (14.3437495 : 19.2812505); (14.3437495 : 33.75)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_businessPartner" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="15d56f9c-62ac-4945-81df-66b0ae79372b" absoluteBounds="23.75, 21.375, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/DALPortalDataContext/certificateDownloaded" />
+      <nestedChildShapes>
+        <elementListCompartment Id="216182bc-bf88-4ad1-a4ad-e7b8b889928a" absoluteBounds="23.765, 21.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b34e6e32-4b4f-48fd-ad8c-af42a5d60142" absoluteBounds="3.375, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DALPortalDataContext/certificateModel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62cf8389-d4c9-4435-8502-c1ecd67b236c" absoluteBounds="3.39, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.7812525 : 27.5); (16.7812525 : 23.3333968098958); (17.2916666666667 : 23.3333968098958 : JumpStart); (17.7708333333333 : 23.3333968098958 : JumpEnd); (20.0416616666667 : 23.3333968098958 : JumpStart); (20.2708333333333 : 23.3333968098958 : JumpEnd); (20.2916666666667 : 23.3333968098958 : JumpStart); (20.7708333333333 : 23.3333968098958 : JumpEnd); (22.8541666666667 : 23.3333968098958 : JumpStart); (23.0208333333333 : 23.3333968098958 : JumpEnd); (23.0416666666667 : 23.3333968098958 : JumpStart); (23.6770838333333 : 23.3333968098958 : JumpEnd); (23.75 : 23.3333968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/batch/batch_certificateDownloaded" />
+      <nodes>
+        <classShapeMoniker Id="7806af6e-b3d7-4333-af0e-855eb4fd4038" />
+        <classShapeMoniker Id="15d56f9c-62ac-4945-81df-66b0ae79372b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.7684497363281); (5.54166666666667 : 33.7684497363281 : JumpStart); (5.72125383231343 : 33.7684497363281 : JumpEnd); (5.875 : 33.7684497363281); (5.875 : 24.0978011067708); (6.02604166666667 : 24.0978011067708 : JumpStart); (6.19270833333333 : 24.0978011067708 : JumpEnd); (7.41666666666667 : 24.0978011067708 : JumpStart); (7.58333333333333 : 24.0978011067708 : JumpEnd); (10.1666666666667 : 24.0978011067708 : JumpStart); (10.3333333333333 : 24.0978011067708 : JumpEnd); (11.1354166666667 : 24.0978011067708 : JumpStart); (11.4348933333333 : 24.0978011067708 : JumpEnd); (11.5416666666667 : 24.0978011067708 : JumpStart); (11.7083333333333 : 24.0978011067708 : JumpEnd); (11.7291666666667 : 24.0978011067708 : JumpStart); (12.1770833333333 : 24.0978011067708 : JumpEnd); (14.1175042789714 : 24.0978011067708 : JumpStart); (14.4270828333333 : 24.0978011067708 : JumpEnd); (14.6041666666667 : 24.0978011067708 : JumpStart); (14.7708333333333 : 24.0978011067708 : JumpEnd); (15.0104166666667 : 24.0978011067708 : JumpStart); (15.1770833333333 : 24.0978011067708 : JumpEnd); (16.6979191666667 : 24.0978011067708 : JumpStart); (16.8645858333333 : 24.0978011067708 : JumpEnd); (17.2916666666667 : 24.0978011067708 : JumpStart); (17.7708333333333 : 24.0978011067708 : JumpEnd); (17.7916666666667 : 24.0978011067708 : JumpStart); (17.9583333333333 : 24.0978011067708 : JumpEnd); (20.0416616666667 : 24.0978011067708 : JumpStart); (20.2708333333333 : 24.0978011067708 : JumpEnd); (20.2916666666667 : 24.0978011067708 : JumpStart); (20.7708333333333 : 24.0978011067708 : JumpEnd); (22.8541666666667 : 24.0978011067708 : JumpStart); (23.0208333333333 : 24.0978011067708 : JumpEnd); (23.0416666666667 : 24.0978011067708 : JumpStart); (23.6770838333333 : 24.0978011067708 : JumpEnd); (24.75 : 24.0978011067708); (24.75 : 23.7228011067708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_certificateDownloaded" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="15d56f9c-62ac-4945-81df-66b0ae79372b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.4430769230769 : 32.375); (20.0476859195871 : 32.1317091326465 : JumpStart); (20.2648090804129 : 32.0443401347905 : JumpEnd); (20.375 : 32); (20.375 : 23.0605671614583); (20.4166666666667 : 23.0605671614583 : JumpStart); (20.7708333333333 : 23.0605671614583 : JumpEnd); (22.8541666666667 : 23.0605671614583 : JumpStart); (23.0208333333333 : 23.0605671614583 : JumpEnd); (23.0416666666667 : 23.0605671614583 : JumpStart); (23.6770838333333 : 23.0605671614583 : JumpEnd); (23.75 : 23.0605671614583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/contactPerson/contactPerson_certificateDownloaded" />
+      <nodes>
+        <classShapeMoniker Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" />
+        <classShapeMoniker Id="15d56f9c-62ac-4945-81df-66b0ae79372b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.1941663061524 : 22.6939925130208); (13.1941663061524 : 23.5593514583333); (14.1175042789714 : 23.5593514583333 : JumpStart); (14.4270828333333 : 23.5593514583333 : JumpEnd); (14.6041666666667 : 23.5593514583333 : JumpStart); (14.7708333333333 : 23.5593514583333 : JumpEnd); (15.0104166666667 : 23.5593514583333 : JumpStart); (15.1770833333333 : 23.5593514583333 : JumpEnd); (16.6979191666667 : 23.5593514583333 : JumpStart); (16.8645858333333 : 23.5593514583333 : JumpEnd); (17.2916666666667 : 23.5593514583333 : JumpStart); (17.7708333333333 : 23.5593514583333 : JumpEnd); (20.0416616666667 : 23.5593514583333 : JumpStart); (20.2708333333333 : 23.5593514583333 : JumpEnd); (20.2916666666667 : 23.5593514583333 : JumpStart); (20.7708333333333 : 23.5593514583333 : JumpEnd); (22.8541666666667 : 23.5593514583333 : JumpStart); (23.0208333333333 : 23.5593514583333 : JumpEnd); (23.0416666666667 : 23.5593514583333 : JumpStart); (23.6770838333333 : 23.5593514583333 : JumpEnd); (23.75 : 23.5593514583333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_certificateDownloaded" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="15d56f9c-62ac-4945-81df-66b0ae79372b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="63907d2d-3f93-44f7-8086-2dddd9554c18" absoluteBounds="12.625, 2.875, 2, 3.1170068359375">
+      <DataClassMoniker Name="/DALPortalDataContext/certificateBundle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="213bfd99-8924-45e1-a20b-b3c3b9ac4b1c" absoluteBounds="12.64, 3.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(12.578122 : 33.75); (12.578122 : 32.1939111328125); (12.1770833333333 : 32.1939111328125 : JumpStart); (12.0104166666667 : 32.1939111328125 : JumpEnd); (11.9375 : 32.1939111328125); (11.9375 : 4.43350341796875); (12.625 : 4.43350341796875)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_certificateBundle" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="63907d2d-3f93-44f7-8086-2dddd9554c18" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9c7f79ab-3c93-4b6b-9a43-0e2606a24f3e" absoluteBounds="9.125, 34.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DALPortalDataContext/userSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8e776f9-fd52-4fb8-b495-3a5d454443d4" absoluteBounds="9.14, 34.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.09375 : 35.8958968098958); (11.09375 : 38.0942178776042); (11.1354166666667 : 38.0942178776042 : JumpStart); (11.3020833333333 : 38.0942178776042 : JumpEnd); (11.6666666666667 : 38.0942178776042 : JumpStart); (11.8333333333333 : 38.0942178776042 : JumpEnd); (12 : 38.0942178776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/userSetting/userSetting_applicationAccess" />
+      <nodes>
+        <classShapeMoniker Id="9c7f79ab-3c93-4b6b-9a43-0e2606a24f3e" />
+        <classShapeMoniker Id="d5ad7882-a5db-468b-aa44-6c99820270d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 20.8958968098958); (11.2926344349011 : 20.9385312447969 : JumpStart); (11.4104855650989 : 21.0563823749947 : JumpEnd); (11.4410744349011 : 21.0869712447969 : JumpStart); (11.5589255650989 : 21.2048223749947 : JumpEnd); (11.625 : 21.2708968098958); (11.625 : 33.75); (11.5 : 33.75); (11.4339255650989 : 33.8160744349011 : JumpStart); (11.3160744349011 : 33.9339255650989 : JumpEnd); (11.2776755650989 : 33.9723244349011 : JumpStart); (11.1598244349011 : 34.0901755650989 : JumpEnd); (11.125 : 34.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/User/User_userSetting" />
+      <nodes>
+        <classShapeMoniker Id="0a574769-c65b-44bf-9e78-95a6293d68de" />
+        <classShapeMoniker Id="9c7f79ab-3c93-4b6b-9a43-0e2606a24f3e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.42187525); (5.54166666666667 : 33.42187525 : JumpStart); (6.02083333333333 : 33.42187525 : JumpEnd); (6.02604166666667 : 33.42187525 : JumpStart); (6.19270833333333 : 33.42187525 : JumpEnd); (8.32291416666667 : 33.42187525 : JumpStart); (8.64583333333333 : 33.42187525 : JumpEnd); (8.66666666666667 : 33.42187525 : JumpStart); (8.89583333333333 : 33.42187525 : JumpEnd); (8.91666666666667 : 33.42187525 : JumpStart); (9.08333333333333 : 33.42187525 : JumpEnd); (10.0937475 : 33.42187525); (10.0937475 : 34.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_userSetting" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="9c7f79ab-3c93-4b6b-9a43-0e2606a24f3e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cee5a6eb-a661-4953-92ec-3dcce8406578" absoluteBounds="4.75, 8.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DALPortalDataContext/businessPartnerApplication" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ce4ac7f-8352-4a1a-acb0-aef86150ec75" absoluteBounds="4.765, 8.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 22.8469962565104); (7.58333333333333 : 22.8469962565104 : JumpStart); (7.41666666666667 : 22.8469962565104 : JumpEnd); (6.19270833333333 : 22.8469962565104 : JumpStart); (6.02604166666667 : 22.8469962565104 : JumpEnd); (5.59375 : 22.8469962565104); (5.59375 : 9.31899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/application/application_businessPartnerApplication" />
+      <nodes>
+        <classShapeMoniker Id="3cba3f37-3c86-4c25-8ac4-5a35ecead38f" />
+        <classShapeMoniker Id="cee5a6eb-a661-4953-92ec-3dcce8406578" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.375 : 36.03125); (11.8333333333333 : 36.03125 : JumpStart); (11.6666666666667 : 36.03125 : JumpEnd); (11.3020833333333 : 36.03125 : JumpStart); (11.0104166666667 : 36.03125 : JumpEnd); (8.89583333333333 : 36.03125 : JumpStart); (8.66666666666667 : 36.03125 : JumpEnd); (8.64583333333333 : 36.03125 : JumpStart); (8.32291416666667 : 36.03125 : JumpEnd); (6.109375 : 36.03125); (6.109375 : 9.31899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_businessPartnerApplication" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="cee5a6eb-a661-4953-92ec-3dcce8406578" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="48a94378-7f05-462f-9a7d-d8bb6217254d" absoluteBounds="6.625, 28.25, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/DALPortalDataContext/item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25672bd6-e638-41be-be26-f8b47961686c" absoluteBounds="6.64, 28.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.625 : 30.29486328125); (8.85416666666667 : 30.29486328125 : JumpStart); (9.08333333333333 : 30.29486328125 : JumpEnd); (11.1354166666667 : 30.29486328125 : JumpStart); (11.3020833333333 : 30.29486328125 : JumpEnd); (11.5416666666667 : 30.29486328125 : JumpStart); (11.7083333333333 : 30.29486328125 : JumpEnd); (11.7291666666667 : 30.29486328125 : JumpStart); (11.9583333333333 : 30.29486328125 : JumpEnd); (12 : 30.29486328125); (12 : 31.3285139973958); (12.0104166666667 : 31.3285139973958 : JumpStart); (12.1770833333333 : 31.3285139973958 : JumpEnd); (13.1471347291667 : 31.3285139973958 : JumpStart); (13.3138013958333 : 31.3285139973958 : JumpEnd); (13.6979191666667 : 31.3285139973958 : JumpStart); (13.8645858333333 : 31.3285139973958 : JumpEnd); (14.2604161666667 : 31.3285139973958 : JumpStart); (14.4270828333333 : 31.3285139973958 : JumpEnd); (14.6041666666667 : 31.3285139973958 : JumpStart); (14.7708333333333 : 31.3285139973958 : JumpEnd); (15.0104166666667 : 31.3285139973958 : JumpStart); (15.1770833333333 : 31.3285139973958 : JumpEnd); (16.0416666666667 : 31.3285139973958 : JumpStart); (16.3333333333333 : 31.3285139973958 : JumpEnd); (17.2916666666667 : 31.3285139973958 : JumpStart); (17.4583333333333 : 31.3285139973958 : JumpEnd); (17.7916666666667 : 31.3285139973958 : JumpStart); (17.9583333333333 : 31.3285139973958 : JumpEnd); (18.3854146666667 : 31.3285139973958 : JumpStart); (18.5520813333333 : 31.3285139973958 : JumpEnd); (18.7838536666667 : 31.3285139973958 : JumpStart); (18.9505203333333 : 31.3285139973958 : JumpEnd); (19.1822926666667 : 31.3285139973958 : JumpStart); (19.3489593333333 : 31.3285139973958 : JumpEnd); (19.5494791666667 : 31.3285139973958 : JumpStart); (19.7161458333333 : 31.3285139973958 : JumpEnd); (20.0416616666667 : 31.3285139973958 : JumpStart); (20.2708333333333 : 31.3285139973958 : JumpEnd); (20.2916666666667 : 31.3285139973958 : JumpStart); (20.5833333333333 : 31.3285139973958 : JumpEnd); (20.6041666666667 : 31.3285139973958 : JumpStart); (20.7708333333333 : 31.3285139973958 : JumpEnd); (21.1354141666667 : 31.3285139973958 : JumpStart); (21.3020808333333 : 31.3285139973958 : JumpEnd); (21.6666666666667 : 31.3285139973958 : JumpStart); (21.8333333333333 : 31.3285139973958 : JumpEnd); (23.25 : 31.3285139973958); (23.25 : 32.8862125651042); (23.5104171666667 : 32.8862125651042 : JumpStart); (23.6770838333333 : 32.8862125651042 : JumpEnd); (24.5 : 32.8862125651042); (24.5 : 32.6362125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_goodsReceiptLine" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="e82cce4c-32af-42a5-be31-29bcc2dc8994" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 28.5729077148438); (8.72916666666667 : 28.5729077148438 : JumpStart); (8.95833333333333 : 28.5729077148438 : JumpEnd); (9 : 28.5729077148438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_itemVLunar" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="603c1629-e8d3-4425-851b-d184bd3c90da" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5625 : 31.7516097005208); (8.5625 : 37.4620154791667); (8.57291666666667 : 37.4620154791667 : JumpStart); (8.95833333333333 : 37.4620154791667 : JumpEnd); (9 : 37.4620154791667)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_priceItem" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="d25c3f85-bf8e-4ec6-a79e-e9a0c6352c80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 31.5112125651042); (8.91666666666667 : 31.5112125651042 : JumpStart); (9.08333333333333 : 31.5112125651042 : JumpEnd); (11.1354166666667 : 31.5112125651042 : JumpStart); (11.3020833333333 : 31.5112125651042 : JumpEnd); (11.5416666666667 : 31.5112125651042 : JumpStart); (11.7083333333333 : 31.5112125651042 : JumpEnd); (11.8541666666667 : 31.5112125651042 : JumpStart); (12.1770833333333 : 31.5112125651042 : JumpEnd); (12.4947886666667 : 31.5112125651042 : JumpStart); (12.6614553333333 : 31.5112125651042 : JumpEnd); (13.1471347291667 : 31.5112125651042 : JumpStart); (13.3138013958333 : 31.5112125651042 : JumpEnd); (13.6979191666667 : 31.5112125651042 : JumpStart); (13.8645858333333 : 31.5112125651042 : JumpEnd); (14.2604161666667 : 31.5112125651042 : JumpStart); (14.4270828333333 : 31.5112125651042 : JumpEnd); (14.6041666666667 : 31.5112125651042 : JumpStart); (14.7708333333333 : 31.5112125651042 : JumpEnd); (15.0104166666667 : 31.5112125651042 : JumpStart); (15.1770833333333 : 31.5112125651042 : JumpEnd); (16.0416666666667 : 31.5112125651042 : JumpStart); (16.3333333333333 : 31.5112125651042 : JumpEnd); (17.2916666666667 : 31.5112125651042 : JumpStart); (17.4583333333333 : 31.5112125651042 : JumpEnd); (17.7916666666667 : 31.5112125651042 : JumpStart); (17.9583333333333 : 31.5112125651042 : JumpEnd); (18.3854146666667 : 31.5112125651042 : JumpStart); (18.5520813333333 : 31.5112125651042 : JumpEnd); (18.7838536666667 : 31.5112125651042 : JumpStart); (18.9505203333333 : 31.5112125651042 : JumpEnd); (19.1822926666667 : 31.5112125651042 : JumpStart); (19.3489593333333 : 31.5112125651042 : JumpEnd); (19.5494791666667 : 31.5112125651042 : JumpStart); (19.7161458333333 : 31.5112125651042 : JumpEnd); (20.0416616666667 : 31.5112125651042 : JumpStart); (20.2708333333333 : 31.5112125651042 : JumpEnd); (20.2916666666667 : 31.5112125651042 : JumpStart); (20.5833333333333 : 31.5112125651042 : JumpEnd); (20.6041666666667 : 31.5112125651042 : JumpStart); (20.7708333333333 : 31.5112125651042 : JumpEnd); (21.2187475 : 31.5112125651042); (21.2187475 : 31.0785139973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_purchaseOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="d898efb8-06f3-400d-8763-1349c59aca05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8 : 28.25); (8 : 24.5156275); (11.1354166666667 : 24.5156275 : JumpStart); (11.4348933333333 : 24.5156275 : JumpEnd); (11.5416666666667 : 24.5156275 : JumpStart); (11.7083333333333 : 24.5156275 : JumpEnd); (11.7291666666667 : 24.5156275 : JumpStart); (11.8958333333333 : 24.5156275 : JumpEnd); (12 : 24.5156275)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_shoppingCart" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="5e66e665-4b8e-4d18-bafe-4b3eeb6ad097" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.4375 : 31.7516097005208); (8.4375 : 42.0232975260417); (8.57291666666667 : 42.0232975260417 : JumpStart); (8.95833333333333 : 42.0232975260417 : JumpEnd); (9 : 42.0232975260417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_stock" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="ca89b091-f406-40a6-a59e-be2bc299859e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 31.1001611328125); (8.85416666666667 : 31.1001611328125 : JumpStart); (9.08333333333333 : 31.1001611328125 : JumpEnd); (11.1354166666667 : 31.1001611328125 : JumpStart); (11.3020833333333 : 31.1001611328125 : JumpEnd); (11.5416666666667 : 31.1001611328125 : JumpStart); (11.7083333333333 : 31.1001611328125 : JumpEnd); (11.7291666666667 : 31.1001611328125 : JumpStart); (12.1770833333333 : 31.1001611328125 : JumpEnd); (13.1471347291667 : 31.1001611328125 : JumpStart); (13.3138013958333 : 31.1001611328125 : JumpEnd); (14.2604161666667 : 31.1001611328125 : JumpStart); (14.4270828333333 : 31.1001611328125 : JumpEnd); (14.6041666666667 : 31.1001611328125 : JumpStart); (14.7708333333333 : 31.1001611328125 : JumpEnd); (14.7916666666667 : 31.1001611328125 : JumpStart); (14.9583333333333 : 31.1001611328125 : JumpEnd); (15.0104166666667 : 31.1001611328125 : JumpStart); (15.1770833333333 : 31.1001611328125 : JumpEnd); (16.0416666666667 : 31.1001611328125 : JumpStart); (16.3333333333333 : 31.1001611328125 : JumpEnd); (16.7812525 : 31.1001611328125); (16.7812525 : 30.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_batch" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="7806af6e-b3d7-4333-af0e-855eb4fd4038" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 33.4368490375601); (5.69107443490112 : 33.245774602659 : JumpStart); (5.80892556509888 : 33.1279234724612 : JumpEnd); (5.81607443490112 : 33.120774602659 : JumpStart); (5.93392556509888 : 33.0029234724612 : JumpEnd); (5.9375 : 32.9993490375601); (5.9375 : 29.0969967565104); (5.94791666666667 : 29.0969967565104 : JumpStart); (6.48958333333333 : 29.0969967565104 : JumpEnd); (6.625 : 29.0969967565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/company/company_item" />
+      <nodes>
+        <classShapeMoniker Id="d15392da-d3ad-4919-b62f-c3f610c15689" />
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 26.7435826401868); (5.66666666666667 : 26.7435826401868 : JumpStart); (5.95833333333333 : 26.7435826401868 : JumpEnd); (6.02604166666667 : 26.7435826401868 : JumpStart); (6.19270833333333 : 26.7435826401868 : JumpEnd); (7.0625 : 26.7435826401868); (7.0625 : 28.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/companyGroup/companyGroup_item" />
+      <nodes>
+        <classShapeMoniker Id="acfb146e-9187-4f10-8182-f2ad70adfc61" />
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 28.7359983782552); (5.66666666666667 : 28.7359983782552 : JumpStart); (6.48958333333333 : 28.7359983782552 : JumpEnd); (6.625 : 28.7359983782552)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/itemGroup/itemGroup_item" />
+      <nodes>
+        <classShapeMoniker Id="60ad25a7-0a89-474e-8780-b11363a728f0" />
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 30.59374975); (5.79166666666667 : 30.59374975 : JumpStart); (6.48958333333333 : 30.59374975 : JumpEnd); (6.625 : 30.59374975)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_item" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7bc14049-4648-4837-b538-99b1fa1632e9" absoluteBounds="29.125, 38.625, 2, 4.8477197265625">
+      <DataClassMoniker Name="/DALPortalDataContext/salesOrderLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67997634-19dd-419d-981e-9133914b75b0" absoluteBounds="29.14, 39.085, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.25 : 22.6228739488932); (14.2604161666667 : 22.6228739488932 : JumpStart); (14.4270828333333 : 22.6228739488932 : JumpEnd); (14.4681273230427 : 22.6228739488932 : JumpStart); (14.7708333333333 : 22.6228739488932 : JumpEnd); (15.0104166666667 : 22.6228739488932 : JumpStart); (15.1770833333333 : 22.6228739488932 : JumpEnd); (17.2916666666667 : 22.6228739488932 : JumpStart); (17.5833333333333 : 22.6228739488932 : JumpEnd); (17.6041666666667 : 22.6228739488932 : JumpStart); (17.7708333333333 : 22.6228739488932 : JumpEnd); (20.0416616666667 : 22.6228739488932 : JumpStart); (20.2708333333333 : 22.6228739488932 : JumpEnd); (20.4166666666667 : 22.6228739488932 : JumpStart); (20.6458333333333 : 22.6228739488932 : JumpEnd); (22.8541666666667 : 22.6228739488932 : JumpStart); (23.0208333333333 : 22.6228739488932 : JumpEnd); (23.1666666666667 : 22.6228739488932 : JumpStart); (23.3958333333333 : 22.6228739488932 : JumpEnd); (23.4375 : 22.6228739488932); (23.4375 : 24.2612939453125); (23.5104171666667 : 24.2612939453125 : JumpStart); (23.6770838333333 : 24.2612939453125 : JumpEnd); (25.9166666666667 : 24.2612939453125 : JumpStart); (26.0833333333333 : 24.2612939453125 : JumpEnd); (29 : 24.2612939453125); (29 : 38); (29.1041666666667 : 38 : JumpStart); (29.2708333333333 : 38 : JumpEnd); (29.5729141666667 : 38 : JumpStart); (29.7395808333333 : 38 : JumpEnd); (30.125 : 38); (30.125 : 38.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_salesOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="7bc14049-4648-4837-b538-99b1fa1632e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.4062475 : 31.7516097005208); (8.4062475 : 43.1146061197917); (8.79166666666667 : 43.1146061197917 : JumpStart); (8.95833333333333 : 43.1146061197917 : JumpEnd); (11.6666666666667 : 43.1146061197917 : JumpStart); (11.8333333333333 : 43.1146061197917 : JumpEnd); (12.0104166666667 : 43.1146061197917 : JumpStart); (12.1770833333333 : 43.1146061197917 : JumpEnd); (13.6979191666667 : 43.1146061197917 : JumpStart); (13.8645858333333 : 43.1146061197917 : JumpEnd); (14.2604166666667 : 43.1146061197917 : JumpStart); (14.4270833333333 : 43.1146061197917 : JumpEnd); (15.9166666666667 : 43.1146061197917 : JumpStart); (16.0833333333333 : 43.1146061197917 : JumpEnd); (17.4166666666667 : 43.1146061197917 : JumpStart); (17.5833333333333 : 43.1146061197917 : JumpEnd); (17.7916666666667 : 43.1146061197917 : JumpStart); (17.9583333333333 : 43.1146061197917 : JumpEnd); (24.7916666666667 : 43.1146061197917 : JumpStart); (24.9583333333333 : 43.1146061197917 : JumpEnd); (29.125 : 43.1146061197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_salesOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="7bc14049-4648-4837-b538-99b1fa1632e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 19.9733398334146); (14.2604161666667 : 19.9733398334146 : JumpStart); (14.4270828333333 : 19.9733398334146 : JumpEnd); (17.4166666666667 : 19.9733398334146 : JumpStart); (17.5833333333333 : 19.9733398334146 : JumpEnd); (17.6041666666667 : 19.9733398334146 : JumpStart); (17.7708333333333 : 19.9733398334146 : JumpEnd); (20.0416616666667 : 19.9733398334146 : JumpStart); (20.2395808333333 : 19.9733398334146 : JumpEnd); (20.4166666666667 : 19.9733398334146 : JumpStart); (20.5833333333333 : 19.9733398334146 : JumpEnd); (23.5104171666667 : 19.9733398334146 : JumpStart); (23.6770838333333 : 19.9733398334146 : JumpEnd); (29.1875 : 19.9733398334146); (29.1875 : 38.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineStatus/lineStatus_salesOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="120048f2-ae1c-47c3-a840-d1697eef9e90" />
+        <classShapeMoniker Id="7bc14049-4648-4837-b538-99b1fa1632e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.25 : 41.5689925130208); (13.25 : 42.9042968164062); (13.6979191666667 : 42.9042968164062 : JumpStart); (13.8645858333333 : 42.9042968164062 : JumpEnd); (14.2604166666667 : 42.9042968164062 : JumpStart); (14.4270833333333 : 42.9042968164062 : JumpEnd); (17.7916666666667 : 42.9042968164062 : JumpStart); (17.9583333333333 : 42.9042968164062 : JumpEnd); (29.125 : 42.9042968164062)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineType/lineType_salesOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="d723ecef-6d34-49c9-b467-f649fa562095" />
+        <classShapeMoniker Id="7bc14049-4648-4837-b538-99b1fa1632e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 29.0969555664063); (14.2604161666667 : 29.0969555664063 : JumpStart); (14.4270828333333 : 29.0969555664063 : JumpEnd); (14.6041666666667 : 29.0969555664063 : JumpStart); (14.7708333333333 : 29.0969555664063 : JumpEnd); (14.875 : 29.0969555664063); (14.875 : 31.2660139973958); (15.0104166666667 : 31.2660139973958 : JumpStart); (15.1770833333333 : 31.2660139973958 : JumpEnd); (16.0416666666667 : 31.2660139973958 : JumpStart); (16.3333333333333 : 31.2660139973958 : JumpEnd); (17.2916666666667 : 31.2660139973958 : JumpStart); (17.4583333333333 : 31.2660139973958 : JumpEnd); (17.7916666666667 : 31.2660139973958 : JumpStart); (17.9583333333333 : 31.2660139973958 : JumpEnd); (18.3854146666667 : 31.2660139973958 : JumpStart); (18.5520813333333 : 31.2660139973958 : JumpEnd); (18.7838536666667 : 31.2660139973958 : JumpStart); (18.9505203333333 : 31.2660139973958 : JumpEnd); (19.1822926666667 : 31.2660139973958 : JumpStart); (19.3489593333333 : 31.2660139973958 : JumpEnd); (19.5494791666667 : 31.2660139973958 : JumpStart); (19.7161458333333 : 31.2660139973958 : JumpEnd); (20.0416616666667 : 31.2660139973958 : JumpStart); (20.2708333333333 : 31.2660139973958 : JumpEnd); (20.2916666666667 : 31.2660139973958 : JumpStart); (20.5833333333333 : 31.2660139973958 : JumpEnd); (20.6041666666667 : 31.2660139973958 : JumpStart); (20.7708333333333 : 31.2660139973958 : JumpEnd); (21.1354141666667 : 31.2660139973958 : JumpStart); (21.3020808333333 : 31.2660139973958 : JumpEnd); (21.6666666666667 : 31.2660139973958 : JumpStart); (21.8333333333333 : 31.2660139973958 : JumpEnd); (22.875 : 31.2660139973958); (22.875 : 35.3285139973958); (23.2291666666667 : 35.3285139973958 : JumpStart); (23.4583333333333 : 35.3285139973958 : JumpEnd); (23.5104171666667 : 35.3285139973958 : JumpStart); (23.7708333333333 : 35.3285139973958 : JumpEnd); (24.3248696666667 : 35.3285139973958 : JumpStart); (24.4915363333333 : 35.3285139973958 : JumpEnd); (26.1666666666667 : 35.3285139973958 : JumpStart); (26.3333333333333 : 35.3285139973958 : JumpEnd); (26.4166666666667 : 35.3285139973958 : JumpStart); (26.5833333333333 : 35.3285139973958 : JumpEnd); (28.9166666666667 : 35.3285139973958 : JumpStart); (29.0833333333333 : 35.3285139973958 : JumpEnd); (29.1041666666667 : 35.3285139973958 : JumpStart); (29.2708333333333 : 35.3285139973958 : JumpEnd); (29.6562475 : 35.3285139973958); (29.6562475 : 38.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/salesOrder/salesOrder_salesOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="510f5321-39bc-4d9d-9cd3-17c5b07f559a" />
+        <classShapeMoniker Id="7bc14049-4648-4837-b538-99b1fa1632e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.765626 : 31.5689925130208); (4.765626 : 33.03125); (4.94791866666667 : 33.03125 : JumpStart); (5.11458533333333 : 33.03125 : JumpEnd); (5.21354466666667 : 33.03125 : JumpStart); (5.38021133333333 : 33.03125 : JumpEnd); (5.79166666666667 : 33.03125 : JumpStart); (6.19270833333333 : 33.03125 : JumpEnd); (8.32291416666667 : 33.03125 : JumpStart); (8.64583333333333 : 33.03125 : JumpEnd); (8.8125 : 33.03125); (8.8125 : 39.6875); (11.6666666666667 : 39.6875 : JumpStart); (11.8333333333333 : 39.6875 : JumpEnd); (12.0104166666667 : 39.6875 : JumpStart); (12.1770833333333 : 39.6875 : JumpEnd); (14.2604166666667 : 39.6875 : JumpStart); (14.4270833333333 : 39.6875 : JumpEnd); (14.8541666666667 : 39.6875 : JumpStart); (15.0208333333333 : 39.6875 : JumpEnd); (15.9166666666667 : 39.6875 : JumpStart); (16.0833333333333 : 39.6875 : JumpEnd); (17.7916666666667 : 39.6875 : JumpStart); (17.9583333333333 : 39.6875 : JumpEnd); (18.25 : 39.6875); (18.25 : 40.9439111328125); (20.5416666666667 : 40.9439111328125 : JumpStart); (20.7083333333333 : 40.9439111328125 : JumpEnd); (21.6666666666667 : 40.9439111328125 : JumpStart); (21.8333333333333 : 40.9439111328125 : JumpEnd); (23.625 : 40.9439111328125); (23.625 : 41.9535953776042); (24.7916666666667 : 41.9535953776042 : JumpStart); (24.9583333333333 : 41.9535953776042 : JumpEnd); (27.6666666666667 : 41.9535953776042 : JumpStart); (27.8333333333333 : 41.9535953776042 : JumpEnd); (28.75 : 41.9535953776042); (28.75 : 41.2633700045072); (29.125 : 41.2633700045072)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_salesOrderLine" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="7bc14049-4648-4837-b538-99b1fa1632e9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d22b7c24-9bad-474c-bad7-f5d9600438af" absoluteBounds="32.875, 39.25, 2, 4.8477197265625">
+      <DataClassMoniker Name="/DALPortalDataContext/deliveryLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d18cfc4-473e-4cbc-a5b8-1cd7b3260722" absoluteBounds="32.89, 39.71, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(33.5625 : 39.25); (33.5625 : 35.2324039713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/deliveryLine/deliveryLine_colliLine" />
+      <nodes>
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+        <classShapeMoniker Id="8fb8c000-c0df-418f-9f16-c028577d22b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(20.375 : 36.90625); (20.5416666666667 : 36.90625 : JumpStart); (20.7083333333333 : 36.90625 : JumpEnd); (23.6041666666667 : 36.90625 : JumpStart); (23.7708333333333 : 36.90625 : JumpEnd); (28.9166666666667 : 36.90625 : JumpStart); (29.0833333333333 : 36.90625 : JumpEnd); (29.1041666666667 : 36.90625 : JumpStart); (29.2708333333333 : 36.90625 : JumpEnd); (34.2500025 : 36.90625); (34.2500025 : 39.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/delivery/delivery_deliveryLine" />
+      <nodes>
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 22.6541264488932); (14.2604161666667 : 22.6541264488932 : JumpStart); (14.4270828333333 : 22.6541264488932 : JumpEnd); (14.4815967431295 : 22.6541264488932 : JumpStart); (14.7708333333333 : 22.6541264488932 : JumpEnd); (15.0104166666667 : 22.6541264488932 : JumpStart); (15.1770833333333 : 22.6541264488932 : JumpEnd); (17.2916666666667 : 22.6541264488932 : JumpStart); (17.5833333333333 : 22.6541264488932 : JumpEnd); (17.6041666666667 : 22.6541264488932 : JumpStart); (17.7708333333333 : 22.6541264488932 : JumpEnd); (20.0416616666667 : 22.6541264488932 : JumpStart); (20.2708333333333 : 22.6541264488932 : JumpEnd); (20.4166666666667 : 22.6541264488932 : JumpStart); (20.6458333333333 : 22.6541264488932 : JumpEnd); (22.8541666666667 : 22.6541264488932 : JumpStart); (23.0208333333333 : 22.6541264488932 : JumpEnd); (23.1666666666667 : 22.6541264488932 : JumpStart); (23.3958333333333 : 22.6541264488932 : JumpEnd); (23.5 : 22.6541264488932); (23.5 : 24.6362939453125); (23.5104171666667 : 24.6362939453125 : JumpStart); (23.6770838333333 : 24.6362939453125 : JumpEnd); (25.9166666666667 : 24.6362939453125 : JumpStart); (26.0833333333333 : 24.6362939453125 : JumpEnd); (28.875 : 24.6362939453125); (28.875 : 26.4824039713542); (28.9166666666667 : 26.4824039713542 : JumpStart); (29.2708333333333 : 26.4824039713542 : JumpEnd); (33.6979186666667 : 26.4824039713542 : JumpStart); (33.8645853333333 : 26.4824039713542 : JumpEnd); (34.5 : 26.4824039713542); (34.5 : 38.875); (34.3333358333333 : 38.875 : JumpStart); (34.1666691666667 : 38.875 : JumpEnd); (33.9895845833333 : 38.875 : JumpStart); (33.8229179166667 : 38.875 : JumpEnd); (33.6458333333333 : 38.875 : JumpStart); (33.4791666666667 : 38.875 : JumpEnd); (33.187498 : 38.875); (33.187498 : 39.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/document/document_deliveryLine" />
+      <nodes>
+        <classShapeMoniker Id="eb2c0295-cfbc-4af9-af08-05956b3d8b51" />
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.625 : 29.8140868554688); (8.85416666666667 : 29.8140868554688 : JumpStart); (9.08333333333333 : 29.8140868554688 : JumpEnd); (11.1354166666667 : 29.8140868554688 : JumpStart); (11.3020833333333 : 29.8140868554688 : JumpEnd); (11.5416666666667 : 29.8140868554688 : JumpStart); (11.7083333333333 : 29.8140868554688 : JumpEnd); (11.875 : 29.8140868554688); (11.875 : 31.3910139973958); (12.0104166666667 : 31.3910139973958 : JumpStart); (12.1770833333333 : 31.3910139973958 : JumpEnd); (12.4947886666667 : 31.3910139973958 : JumpStart); (12.6614553333333 : 31.3910139973958 : JumpEnd); (13.1471347291667 : 31.3910139973958 : JumpStart); (13.3138013958333 : 31.3910139973958 : JumpEnd); (13.6979191666667 : 31.3910139973958 : JumpStart); (13.8645858333333 : 31.3910139973958 : JumpEnd); (14.2604161666667 : 31.3910139973958 : JumpStart); (14.4270828333333 : 31.3910139973958 : JumpEnd); (14.6041666666667 : 31.3910139973958 : JumpStart); (14.7708333333333 : 31.3910139973958 : JumpEnd); (15.0104166666667 : 31.3910139973958 : JumpStart); (15.1770833333333 : 31.3910139973958 : JumpEnd); (16.0416666666667 : 31.3910139973958 : JumpStart); (16.3333333333333 : 31.3910139973958 : JumpEnd); (17.2916666666667 : 31.3910139973958 : JumpStart); (17.4583333333333 : 31.3910139973958 : JumpEnd); (17.7916666666667 : 31.3910139973958 : JumpStart); (17.9583333333333 : 31.3910139973958 : JumpEnd); (18.3854146666667 : 31.3910139973958 : JumpStart); (18.5520813333333 : 31.3910139973958 : JumpEnd); (18.7838536666667 : 31.3910139973958 : JumpStart); (18.9505203333333 : 31.3910139973958 : JumpEnd); (19.1822926666667 : 31.3910139973958 : JumpStart); (19.3489593333333 : 31.3910139973958 : JumpEnd); (19.5494791666667 : 31.3910139973958 : JumpStart); (19.7161458333333 : 31.3910139973958 : JumpEnd); (20.0416616666667 : 31.3910139973958 : JumpStart); (20.2708333333333 : 31.3910139973958 : JumpEnd); (20.2916666666667 : 31.3910139973958 : JumpStart); (20.5833333333333 : 31.3910139973958 : JumpEnd); (20.6041666666667 : 31.3910139973958 : JumpStart); (20.7708333333333 : 31.3910139973958 : JumpEnd); (21.1354141666667 : 31.3910139973958 : JumpStart); (21.3020808333333 : 31.3910139973958 : JumpEnd); (21.6666666666667 : 31.3910139973958 : JumpStart); (21.8333333333333 : 31.3910139973958 : JumpEnd); (22.7916666666667 : 31.3910139973958 : JumpStart); (22.9583333333333 : 31.3910139973958 : JumpEnd); (23.3125 : 31.3910139973958); (23.3125 : 35.6074039713542); (23.5104171666667 : 35.6074039713542 : JumpStart); (23.7708333333333 : 35.6074039713542 : JumpEnd); (24.3248696666667 : 35.6074039713542 : JumpStart); (24.4915363333333 : 35.6074039713542 : JumpEnd); (26.1666666666667 : 35.6074039713542 : JumpStart); (26.3333333333333 : 35.6074039713542 : JumpEnd); (26.4166666666667 : 35.6074039713542 : JumpStart); (26.5833333333333 : 35.6074039713542 : JumpEnd); (28.9166666666667 : 35.6074039713542 : JumpStart); (29.0833333333333 : 35.6074039713542 : JumpEnd); (29.1041666666667 : 35.6074039713542 : JumpStart); (29.2708333333333 : 35.6074039713542 : JumpEnd); (29.5729141666667 : 35.6074039713542 : JumpStart); (29.7395808333333 : 35.6074039713542 : JumpEnd); (30.4166666666667 : 35.6074039713542 : JumpStart); (30.5833333333333 : 35.6074039713542 : JumpEnd); (33.4791666666667 : 35.6074039713542 : JumpStart); (33.6458333333333 : 35.6074039713542 : JumpEnd); (33.90625125 : 35.6074039713542); (33.90625125 : 39.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/item/item_deliveryLine" />
+      <nodes>
+        <classShapeMoniker Id="48a94378-7f05-462f-9a7d-d8bb6217254d" />
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 20.3180519249705); (14.2604161666667 : 20.3180519249705 : JumpStart); (14.4270828333333 : 20.3180519249705 : JumpEnd); (17.4166666666667 : 20.3180519249705 : JumpStart); (17.5833333333333 : 20.3180519249705 : JumpEnd); (17.6041666666667 : 20.3180519249705 : JumpStart); (17.7708333333333 : 20.3180519249705 : JumpEnd); (20.0416616666667 : 20.3180519249705 : JumpStart); (20.2395808333333 : 20.3180519249705 : JumpEnd); (20.4166666666667 : 20.3180519249705 : JumpStart); (20.5833333333333 : 20.3180519249705 : JumpEnd); (23.5104171666667 : 20.3180519249705 : JumpStart); (23.6770838333333 : 20.3180519249705 : JumpEnd); (29.1041666666667 : 20.3180519249705 : JumpStart); (29.2708333333333 : 20.3180519249705 : JumpEnd); (34.6875 : 20.3180519249705); (34.6875 : 39.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineStatus/lineStatus_deliveryLine" />
+      <nodes>
+        <classShapeMoniker Id="120048f2-ae1c-47c3-a840-d1697eef9e90" />
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.7812525 : 41.5689925130208); (13.7812525 : 43.8161079915365); (32.875 : 43.8161079915365)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/lineType/lineType_deliveryLine" />
+      <nodes>
+        <classShapeMoniker Id="d723ecef-6d34-49c9-b467-f649fa562095" />
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.296878 : 31.5689925130208); (5.296878 : 33.21875); (5.62361040307864 : 33.21875 : JumpStart); (5.95833333333333 : 33.21875 : JumpEnd); (6.02604166666667 : 33.21875 : JumpStart); (6.19270833333333 : 33.21875 : JumpEnd); (8.32291416666667 : 33.21875 : JumpStart); (8.64583333333333 : 33.21875 : JumpEnd); (8.75 : 33.21875); (8.75 : 42.4054996744792); (8.79166666666667 : 42.4054996744792 : JumpStart); (8.95833333333333 : 42.4054996744792 : JumpEnd); (11.6666666666667 : 42.4054996744792 : JumpStart); (11.8333333333333 : 42.4054996744792 : JumpEnd); (12.0104166666667 : 42.4054996744792 : JumpStart); (12.1770833333333 : 42.4054996744792 : JumpEnd); (13.1666666666667 : 42.4054996744792 : JumpStart); (13.3333333333333 : 42.4054996744792 : JumpEnd); (13.6979191666667 : 42.4054996744792 : JumpStart); (13.8645858333333 : 42.4054996744792 : JumpEnd); (14.2604166666667 : 42.4054996744792 : JumpStart); (14.4270833333333 : 42.4054996744792 : JumpEnd); (15.9166666666667 : 42.4054996744792 : JumpStart); (16.0833333333333 : 42.4054996744792 : JumpEnd); (17.5 : 42.4054996744792); (17.5 : 43.5977197265625); (17.7916666666667 : 43.5977197265625 : JumpStart); (17.9583333333333 : 43.5977197265625 : JumpEnd); (24.7916666666667 : 43.5977197265625 : JumpStart); (24.9583333333333 : 43.5977197265625 : JumpEnd); (32.5 : 43.5977197265625); (32.5 : 41.5018019957682); (32.875 : 41.5018019957682)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DALPortalDataContext/unitOfMeasure/unitOfMeasure_deliveryLine" />
+      <nodes>
+        <classShapeMoniker Id="85000b54-a94b-4373-bf16-1aaad3c732fc" />
+        <classShapeMoniker Id="d22b7c24-9bad-474c-bad7-f5d9600438af" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="02b5957f-faf0-4251-9c82-fc35509ee11d" absoluteBounds="0.5, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DALPortalDataContext/usageReport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae23cb24-eb8d-46cc-8caf-11df427a6a05" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(20.124995 : 36.875); (20.124995 : 2.40949625651042); (17.5833333333333 : 2.40949625651042 : JumpStart); (17.4166666666667 : 2.40949625651042 : JumpEnd); (11.8958333333333 : 2.40949625651042 : JumpStart); (11.7291666666667 : 2.40949625651042 : JumpEnd); (2.5 : 2.40949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/delivery/delivery_usageReport" />
+      <nodes>
+        <classShapeMoniker Id="6de8710b-5991-4f86-97fa-996b167884c0" />
+        <classShapeMoniker Id="02b5957f-faf0-4251-9c82-fc35509ee11d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.578122 : 33.75); (12.578122 : 31.2564111328125); (12.1770833333333 : 31.2564111328125 : JumpStart); (11.8541666666667 : 31.2564111328125 : JumpEnd); (11.8125 : 31.2564111328125); (11.8125 : 2.19399251302083); (2.875 : 2.19399251302083); (2.875 : 1.42349612825521); (2.5 : 1.42349612825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/businessPartner/businessPartner_usageReport" />
+      <nodes>
+        <classShapeMoniker Id="9a1f5fbe-7f77-456a-a9c7-c8190e22d300" />
+        <classShapeMoniker Id="02b5957f-faf0-4251-9c82-fc35509ee11d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.6328125 : 32.375); (19.6328125 : 31.0016097005208); (19.3489593333333 : 31.0016097005208 : JumpStart); (19.1822926666667 : 31.0016097005208 : JumpEnd); (18.9505203333333 : 31.0016097005208 : JumpStart); (18.7838536666667 : 31.0016097005208 : JumpEnd); (18.5520813333333 : 31.0016097005208 : JumpStart); (18.3854146666667 : 31.0016097005208 : JumpEnd); (17.9583333333333 : 31.0016097005208 : JumpStart); (17.7916666666667 : 31.0016097005208 : JumpEnd); (17.5 : 31.0016097005208); (17.5 : 2.06899251302083); (3.125 : 2.06899251302083); (3.125 : 0.930496064127604); (2.5 : 0.930496064127604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALPortalDataContext/contactPerson/contactPerson_usageReport" />
+      <nodes>
+        <classShapeMoniker Id="d62e72fb-9cc6-4383-a55a-f0d48265b951" />
+        <classShapeMoniker Id="02b5957f-faf0-4251-9c82-fc35509ee11d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2ee4a23f-1807-4080-816c-371762bc151d" absoluteBounds="3.875, 4.625, 2, 4.2708154296875">
+      <DataClassMoniker Name="/DALPortalDataContext/vw_DeliveryLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f09a6149-2d2e-4c39-8008-4e8838b1459d" absoluteBounds="3.89, 5.085, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

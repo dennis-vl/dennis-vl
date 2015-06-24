@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode url="~/Default.aspx" title="$resources:SiteMapLocalizations, Home" description="">
+    <!--<siteMapNode url="~/Default.aspx" title="Home" description="" />-->
+    <!--<siteMapNode url="~/Pages/AppOverview.aspx" title="Applications" description="">-->
+    <siteMapNode url="~/Pages/DOP/DOPDetails.aspx" title="$resources:SiteMapLocalizations, DOP" description="DOP"/>
+      <siteMapNode url="~/Pages/DeliveryDetails.aspx" title="$resources:SiteMapLocalizations, Certificates" description="Cert" />
+      <!--<siteMapNode url="~/Pages/Esm/ItemOverview.aspx" title="Items" description="" />-->
+    <!--</siteMapNode>-->
+    <siteMapNode url="~/Account/Manage.aspx" title="$resources:SiteMapLocalizations, Account" description="Account" />
+    <siteMapNode url="~/Pages/CustomerAccounts.aspx" title="Customer Accounts" description="CustomerAccounts" />
+    <siteMapNode url="~/Pages/UserAccounts.aspx" title="User Accounts" description="UserAccounts" />
+    
+  </siteMapNode>
+</siteMap>

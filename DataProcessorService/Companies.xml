@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <companies>
+    <company>
+      <dbserver>VLZWD038NB-VM1\MSSQL</dbserver>
+      <dbuser>sa</dbuser>
+      <dbpassword>gvt6/FmAwXcw5zhRZGVm0w==</dbpassword>
+      <database>SBO_SAPECC6_PROD</database>
+      <user>manager</user>
+      <password>Kapo10prod</password>
+    </company>
+  </companies>
+</Settings>

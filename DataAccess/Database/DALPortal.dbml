@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Portal2" Class="DALPortalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=Portal_Dennis;Integrated Security=True;Persist Security Info=True" SettingsObjectName="VanLeeuwen.Projects.WebPortal.DataAccess.Properties.Settings" SettingsPropertyName="PortalConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.application" Member="applications">
+    <Type Name="application">
+      <Column Name="applicationCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="applicationName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="application_applicationAccess" Member="applicationAccesses" ThisKey="applicationCode" OtherKey="applicationCode" Type="applicationAccess" />
+      <Association Name="application_applicationRole" Member="applicationRoles" ThisKey="applicationCode" OtherKey="applicationCode" Type="applicationRole" />
+      <Association Name="application_shoppingCart" Member="shoppingCarts" ThisKey="applicationCode" OtherKey="applicationCode" Type="shoppingCart" />
+      <Association Name="application_businessPartnerApplication" Member="businessPartnerApplications" ThisKey="applicationCode" OtherKey="applicationCode" Type="businessPartnerApplication" />
+    </Type>
+  </Table>
+  <Table Name="dbo.warehouse" Member="warehouses">
+    <Type Name="warehouse">
+      <Column Name="warehouseId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="warehouseCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="warehouseName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="warehouse_stock" Member="stocks" ThisKey="warehouseId" OtherKey="warehouseId" Type="stock" />
+      <Association Name="company_warehouse" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.applicationAccess" Member="applicationAccesses">
+    <Type Name="applicationAccess">
+      <Column Name="userId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="applicationCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hasAccess" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="roleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="application_applicationAccess" Member="application" ThisKey="applicationCode" OtherKey="applicationCode" Type="application" IsForeignKey="true" />
+      <Association Name="Role_applicationAccess" Member="Role" ThisKey="roleId" OtherKey="RoleId" Type="Role" IsForeignKey="true" />
+      <Association Name="userSetting_applicationAccess" Member="userSetting" ThisKey="userId" OtherKey="userId" Type="userSetting" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.applicationRole" Member="applicationRoles">
+    <Type Name="applicationRole">
+      <Column Name="roleCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="applicationCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="applicationRole_userRole" Member="userRoles" ThisKey="roleCode" OtherKey="roleCode" Type="userRole" />
+      <Association Name="application_applicationRole" Member="application" ThisKey="applicationCode" OtherKey="applicationCode" Type="application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Applications" Member="Application1s">
+    <Type Name="Application1">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ApplicationName" Type="System.String" DbType="NVarChar(235) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="Application1_Role" Member="Roles" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="Role" />
+      <Association Name="Application1_User" Member="Users" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.batchDocument" Member="batchDocuments">
+    <Type Name="batchDocument">
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="batchId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Association Name="document_batchDocument" Member="document" ThisKey="baseDocType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="batch_batchDocument" Member="batch" ThisKey="batchId" OtherKey="batchId" Type="batch" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.colli" Member="collis">
+    <Type Name="colli">
+      <Column Name="colliId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="colliNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="colliUnitCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="packListId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="length" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="width" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="heigth" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="weightGross" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="weightNett" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="cubicMeters" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="colli_colliLine" Member="colliLines" ThisKey="colliId" OtherKey="colliId" Type="colliLine" />
+      <Association Name="colliUnit_colli" Member="colliUnit" ThisKey="colliUnitCode" OtherKey="colliUnitCode" Type="colliUnit" IsForeignKey="true" />
+      <Association Name="packList_colli" Member="packList" ThisKey="packListId" OtherKey="packListId" Type="packList" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.colliLine" Member="colliLines">
+    <Type Name="colliLine">
+      <Column Name="colliId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="quantity1" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="quantity2" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="uomCode2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Association Name="colli_colliLine" Member="colli" ThisKey="colliId" OtherKey="colliId" Type="colli" IsForeignKey="true" />
+      <Association Name="document_colliLine" Member="document" ThisKey="baseDocType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_colliLine" Member="unitOfMeasure" ThisKey="uomCode1" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_colliLine1" Member="unitOfMeasure1" ThisKey="uomCode2" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+      <Association Name="deliveryLine_colliLine" Member="deliveryLine" ThisKey="baseDocId,baseLineNum" OtherKey="docId,lineNum" Type="deliveryLine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.colliType" Member="colliTypes">
+    <Type Name="colliType">
+      <Column Name="colliTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="colliType_colliUnit" Member="colliUnits" ThisKey="colliTypeCode" OtherKey="colliTypeCode" Type="colliUnit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.colliUnit" Member="colliUnits">
+    <Type Name="colliUnit">
+      <Column Name="colliUnitCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="colliTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="length" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="width" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="heigth" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="weightAdditional" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="colliUnit_colli" Member="collis" ThisKey="colliUnitCode" OtherKey="colliUnitCode" Type="colli" />
+      <Association Name="colliType_colliUnit" Member="colliType" ThisKey="colliTypeCode" OtherKey="colliTypeCode" Type="colliType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.company" Member="companies">
+    <Type Name="company">
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="currencyCode" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Association Name="company_warehouse" Member="warehouses" ThisKey="companyCode" OtherKey="companyCode" Type="warehouse" />
+      <Association Name="company_companyGroupForBp" Member="companyGroupForBps" ThisKey="companyCode" OtherKey="companyCode" Type="companyGroupForBp" />
+      <Association Name="company_companyGroupForItem" Member="companyGroupForItems" ThisKey="companyCode" OtherKey="companyCode" Type="companyGroupForItem" />
+      <Association Name="company_companySection" Member="companySections" ThisKey="companyCode" OtherKey="CompanyCode" Type="companySection" />
+      <Association Name="company_goodsReceipt" Member="goodsReceipts" ThisKey="companyCode" OtherKey="companyCode" Type="goodsReceipt" />
+      <Association Name="company_priceItem" Member="priceItems" ThisKey="companyCode" OtherKey="companyCode" Type="priceItem" />
+      <Association Name="company_project" Member="projects" ThisKey="companyCode" OtherKey="companyCode" Type="project" />
+      <Association Name="company_purchaseOrder" Member="purchaseOrders" ThisKey="companyCode" OtherKey="companyCode" Type="purchaseOrder" />
+      <Association Name="company_salesOrder" Member="salesOrders" ThisKey="companyCode" OtherKey="companyCode" Type="salesOrder" />
+      <Association Name="company_shoppingCart" Member="shoppingCarts" ThisKey="companyCode" OtherKey="companyCode" Type="shoppingCart" />
+      <Association Name="company_batch" Member="batches" ThisKey="companyCode" OtherKey="companyCode" Type="batch" />
+      <Association Name="company_delivery" Member="deliveries" ThisKey="companyCode" OtherKey="companyCode" Type="delivery" />
+      <Association Name="company_businessPartner" Member="businessPartners" ThisKey="companyCode" OtherKey="companyCode" Type="businessPartner" />
+      <Association Name="company_certificateDownloaded" Member="certificateDownloadeds" ThisKey="companyCode" OtherKey="companyCode" Type="certificateDownloaded" />
+      <Association Name="company_userSetting" Member="userSettings" ThisKey="companyCode" OtherKey="companyCode" Type="userSetting" />
+      <Association Name="company_item" Member="items" ThisKey="companyCode" OtherKey="companyCode" Type="item" />
+      <Association Name="currency_company" Member="currency" ThisKey="currencyCode" OtherKey="currencyCode" Type="currency" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companyGroup" Member="companyGroups">
+    <Type Name="companyGroup">
+      <Column Name="companyGroupCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="companyGroup_companyGroupForBp" Member="companyGroupForBps" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="companyGroupForBp" />
+      <Association Name="companyGroup_companyGroupForItem" Member="companyGroupForItems" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="companyGroupForItem" />
+      <Association Name="companyGroup_businessPartner" Member="businessPartners" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="businessPartner" />
+      <Association Name="companyGroup_item" Member="items" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="item" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companyGroupForBp" Member="companyGroupForBps">
+    <Type Name="companyGroupForBp">
+      <Column Name="companyGroupCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="company_companyGroupForBp" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="companyGroup_companyGroupForBp" Member="companyGroup" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="companyGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companyGroupForItems" Member="companyGroupForItems">
+    <Type Name="companyGroupForItem">
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyGroupCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="company_companyGroupForItem" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="companyGroup_companyGroupForItem" Member="companyGroup" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="companyGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companySection" Member="companySections">
+    <Type Name="companySection">
+      <Column Name="CompanyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompanySectionCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="company_companySection" Member="company" ThisKey="CompanyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.contactPerson" Member="contactPersons">
+    <Type Name="contactPerson">
+      <Column Name="contactPersonId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="contactPersonCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="eMail" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="telephoneNumber1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="telephoneNumber2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="userId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="isWebContact" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="contactPerson_contactPersonProject" Member="contactPersonProjects" ThisKey="contactPersonId" OtherKey="contactPersonId" Type="contactPersonProject" />
+      <Association Name="contactPerson_businessPartner" Member="businessPartners" ThisKey="contactPersonId" OtherKey="defaultContactPersonId" Type="businessPartner" />
+      <Association Name="contactPerson_certificateDownloaded" Member="certificateDownloadeds" ThisKey="contactPersonId" OtherKey="contactPersonId" Type="certificateDownloaded" />
+      <Association Name="contactPerson_usageReport" Member="usageReports" ThisKey="contactPersonId" OtherKey="contactPersonId" Type="usageReport" />
+      <Association Name="User_contactPerson" Member="User" ThisKey="userId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="businessPartner_contactPerson" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.contactPersonProject" Member="contactPersonProjects">
+    <Type Name="contactPersonProject">
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="contactPersonId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="contactPerson_contactPersonProject" Member="contactPerson" ThisKey="contactPersonId" OtherKey="contactPersonId" Type="contactPerson" IsForeignKey="true" />
+      <Association Name="project_contactPersonProject" Member="project" ThisKey="projectCode" OtherKey="projectCode" Type="project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.country" Member="countries">
+    <Type Name="country">
+      <Column Name="countryCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="country_businessPartner" Member="businessPartners" ThisKey="countryCode" OtherKey="countryCode" Type="businessPartner" />
+    </Type>
+  </Table>
+  <Table Name="dbo.currency" Member="currencies">
+    <Type Name="currency">
+      <Column Name="currencyCode" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="currency_company" Member="companies" ThisKey="currencyCode" OtherKey="currencyCode" Type="company" />
+      <Association Name="currency_goodsReceipt" Member="goodsReceipts" ThisKey="currencyCode" OtherKey="currencyCode" Type="goodsReceipt" />
+      <Association Name="currency_purchaseOrder" Member="purchaseOrders" ThisKey="currencyCode" OtherKey="currencyCode" Type="purchaseOrder" />
+      <Association Name="currency_salesOrder" Member="salesOrders" ThisKey="currencyCode" OtherKey="currencyCode" Type="salesOrder" />
+      <Association Name="currency_delivery" Member="deliveries" ThisKey="currencyCode" OtherKey="currencyCode" Type="delivery" />
+    </Type>
+  </Table>
+  <Table Name="dbo.docStatus" Member="docStatus">
+    <Type Name="docStatus">
+      <Column Name="docStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="docStatus_goodsReceipt" Member="goodsReceipts" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="goodsReceipt" />
+      <Association Name="docStatus_purchaseOrder" Member="purchaseOrders" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="purchaseOrder" />
+      <Association Name="docStatus_salesOrder" Member="salesOrders" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="salesOrder" />
+      <Association Name="docStatus_delivery" Member="deliveries" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="delivery" />
+    </Type>
+  </Table>
+  <Table Name="dbo.document" Member="documents">
+    <Type Name="document">
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="document_batchDocument" Member="batchDocuments" ThisKey="docType" OtherKey="baseDocType" Type="batchDocument" />
+      <Association Name="document_colliLine" Member="colliLines" ThisKey="docType" OtherKey="baseDocType" Type="colliLine" />
+      <Association Name="document_goodsReceipt" Member="goodsReceipts" ThisKey="docType" OtherKey="docType" Type="goodsReceipt" />
+      <Association Name="document_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="docType" OtherKey="docType" Type="goodsReceiptLine" />
+      <Association Name="document_goodsReceiptLine1" Member="goodsReceiptLines1" ThisKey="docType" OtherKey="baseDocType" Type="goodsReceiptLine" />
+      <Association Name="document_inspection" Member="inspections" ThisKey="docType" OtherKey="docType" Type="inspection" />
+      <Association Name="document_inspectionLine" Member="inspectionLines" ThisKey="docType" OtherKey="baseDocType" Type="inspectionLine" />
+      <Association Name="document_purchaseOrder" Member="purchaseOrders" ThisKey="docType" OtherKey="docType" Type="purchaseOrder" />
+      <Association Name="document_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="docType" OtherKey="docType" Type="purchaseOrderLine" />
+      <Association Name="document_salesOrder" Member="salesOrders" ThisKey="docType" OtherKey="docType" Type="salesOrder" />
+      <Association Name="document_transport" Member="transports" ThisKey="docType" OtherKey="baseDocType" Type="transport" />
+      <Association Name="document_delivery" Member="deliveries" ThisKey="docType" OtherKey="docType" Type="delivery" />
+      <Association Name="document_certificateDownloaded" Member="certificateDownloadeds" ThisKey="docType" OtherKey="baseDocType" Type="certificateDownloaded" />
+      <Association Name="document_salesOrderLine" Member="salesOrderLines" ThisKey="docType" OtherKey="docType" Type="salesOrderLine" />
+      <Association Name="document_deliveryLine" Member="deliveryLines" ThisKey="docType" OtherKey="docType" Type="deliveryLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goodsReceipt" Member="goodsReceipts">
+    <Type Name="goodsReceipt">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="documentNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="docDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="createDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="docStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="receiptDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="currencyCode" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="currencyRate" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="goodsReceipt_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="docId" OtherKey="docId" Type="goodsReceiptLine" />
+      <Association Name="company_goodsReceipt" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="currency_goodsReceipt" Member="currency" ThisKey="currencyCode" OtherKey="currencyCode" Type="currency" IsForeignKey="true" />
+      <Association Name="docStatus_goodsReceipt" Member="docStatus" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="docStatus" IsForeignKey="true" />
+      <Association Name="document_goodsReceipt" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="project_goodsReceipt" Member="project" ThisKey="projectCode" OtherKey="projectCode" Type="project" IsForeignKey="true" />
+      <Association Name="businessPartner_goodsReceipt" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goodsReceiptLine" Member="goodsReceiptLines">
+    <Type Name="goodsReceiptLine">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCodeOrg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="lineTotal" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="lineTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lineStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="receiptDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Association Name="document_goodsReceiptLine" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="document_goodsReceiptLine1" Member="document1" ThisKey="baseDocType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="goodsReceipt_goodsReceiptLine" Member="goodsReceipt" ThisKey="docId" OtherKey="docId" Type="goodsReceipt" IsForeignKey="true" />
+      <Association Name="lineStatus_goodsReceiptLine" Member="lineStatus" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="lineStatus" IsForeignKey="true" />
+      <Association Name="lineType_goodsReceiptLine" Member="lineType" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="lineType" IsForeignKey="true" />
+      <Association Name="purchaseOrderLine_goodsReceiptLine" Member="purchaseOrderLine" ThisKey="baseDocId,baseLineNum" OtherKey="docId,lineNum" Type="purchaseOrderLine" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_goodsReceiptLine" Member="unitOfMeasure" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+      <Association Name="item_goodsReceiptLine" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.inspection" Member="inspections">
+    <Type Name="inspection">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="docNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="docDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Association Name="inspection_inspectionLine" Member="inspectionLines" ThisKey="docId" OtherKey="docId" Type="inspectionLine" />
+      <Association Name="document_inspection" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="project_inspection" Member="project" ThisKey="projectCode" OtherKey="projectCode" Type="project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.inspectionLine" Member="inspectionLines">
+    <Type Name="inspectionLine">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCodeOrg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="statusInspection" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="statusRelease" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="inspectionDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="inspectionDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="inspectionDate3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="releaseDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="releaseDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="releaseDate3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="reportNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Association Name="document_inspectionLine" Member="document" ThisKey="baseDocType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="inspection_inspectionLine" Member="inspection" ThisKey="docId" OtherKey="docId" Type="inspection" IsForeignKey="true" />
+      <Association Name="purchaseOrderLine_inspectionLine" Member="purchaseOrderLine" ThisKey="baseDocId,baseLineNum" OtherKey="docId,lineNum" Type="purchaseOrderLine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.itemGroup" Member="itemGroups">
+    <Type Name="itemGroup">
+      <Column Name="itemGroupCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemGroupName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="itemGroup_item" Member="items" ThisKey="itemGroupCode" OtherKey="itemGroupCode" Type="item" />
+    </Type>
+  </Table>
+  <Table Name="dbo.itemVLunar" Member="itemVLunars">
+    <Type Name="itemVLunar">
+      <Column Name="vLunarCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="outsideDiameter1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="outsideDiameter2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="outsideDiameter3" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="wallThickness1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="wallThickness2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="specification" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="length" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="treatmentHeat" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="treatmentSurface" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ends" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="cdi" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="supplier" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="other" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="certificates" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="version" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="item_itemVLunar" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.language" Member="languages">
+    <Type Name="language">
+      <Column Name="languageCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="language_translate" Member="translates" ThisKey="languageCode" OtherKey="languageCode" Type="translate" />
+      <Association Name="language_businessPartner" Member="businessPartners" ThisKey="languageCode" OtherKey="languageCode" Type="businessPartner" />
+    </Type>
+  </Table>
+  <Table Name="dbo.lineStatus" Member="lineStatus">
+    <Type Name="lineStatus">
+      <Column Name="lineStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="lineStatus_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="goodsReceiptLine" />
+      <Association Name="lineStatus_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="purchaseOrderLine" />
+      <Association Name="lineStatus_salesOrderLine" Member="salesOrderLines" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="salesOrderLine" />
+      <Association Name="lineStatus_deliveryLine" Member="deliveryLines" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="deliveryLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.lineType" Member="lineTypes">
+    <Type Name="lineType">
+      <Column Name="lineTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="lineType_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="goodsReceiptLine" />
+      <Association Name="lineType_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="purchaseOrderLine" />
+      <Association Name="lineType_salesOrderLine" Member="salesOrderLines" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="salesOrderLine" />
+      <Association Name="lineType_deliveryLine" Member="deliveryLines" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="deliveryLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.packList" Member="packLists">
+    <Type Name="packList">
+      <Column Name="packListId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="packListNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="packListNumberCustomer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="packList_colli" Member="collis" ThisKey="packListId" OtherKey="packListId" Type="colli" />
+    </Type>
+  </Table>
+  <Table Name="dbo.priceItem" Member="priceItems">
+    <Type Name="priceItem">
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="priceListCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Association Name="company_priceItem" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="priceList_priceItem" Member="priceList" ThisKey="priceListCode" OtherKey="priceListCode" Type="priceList" IsForeignKey="true" />
+      <Association Name="item_priceItem" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.priceList" Member="priceLists">
+    <Type Name="priceList">
+      <Column Name="priceListCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="priceListName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="priceList_priceItem" Member="priceItems" ThisKey="priceListCode" OtherKey="priceListCode" Type="priceItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Profiles" Member="Profiles">
+    <Type Name="Profile">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PropertyNames" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyValueStrings" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyValueBinary" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_Profile" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.project" Member="projects">
+    <Type Name="project">
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="projectName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="companyCustomer" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="project_contactPersonProject" Member="contactPersonProjects" ThisKey="projectCode" OtherKey="projectCode" Type="contactPersonProject" />
+      <Association Name="project_goodsReceipt" Member="goodsReceipts" ThisKey="projectCode" OtherKey="projectCode" Type="goodsReceipt" />
+      <Association Name="project_inspection" Member="inspections" ThisKey="projectCode" OtherKey="projectCode" Type="inspection" />
+      <Association Name="project_transportProject" Member="transportProjects" ThisKey="projectCode" OtherKey="projectCode" Type="transportProject" />
+      <Association Name="project_delivery" Member="deliveries" ThisKey="projectCode" OtherKey="projectCode" Type="delivery" />
+      <Association Name="project_userRole" Member="userRoles" ThisKey="projectCode" OtherKey="projectCode" Type="userRole" />
+      <Association Name="company_project" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="businessPartner_project" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.purchaseOrder" Member="purchaseOrders">
+    <Type Name="purchaseOrder">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="documentNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="docDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="createDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="docStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="deliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="currencyCode" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="currencyRate" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="purchaseOrder_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="docId" OtherKey="docId" Type="purchaseOrderLine" />
+      <Association Name="company_purchaseOrder" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="currency_purchaseOrder" Member="currency" ThisKey="currencyCode" OtherKey="currencyCode" Type="currency" IsForeignKey="true" />
+      <Association Name="docStatus_purchaseOrder" Member="docStatus" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="docStatus" IsForeignKey="true" />
+      <Association Name="document_purchaseOrder" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="businessPartner_purchaseOrder" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.purchaseOrderLine" Member="purchaseOrderLines">
+    <Type Name="purchaseOrderLine">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="openQuantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCodeOrg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="lineTotal" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="deliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lineTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lineStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="purchaseOrderLine_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="docId,lineNum" OtherKey="baseDocId,baseLineNum" Type="goodsReceiptLine" />
+      <Association Name="purchaseOrderLine_inspectionLine" Member="inspectionLines" ThisKey="docId,lineNum" OtherKey="baseDocId,baseLineNum" Type="inspectionLine" />
+      <Association Name="document_purchaseOrderLine" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="lineStatus_purchaseOrderLine" Member="lineStatus" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="lineStatus" IsForeignKey="true" />
+      <Association Name="lineType_purchaseOrderLine" Member="lineType" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="lineType" IsForeignKey="true" />
+      <Association Name="purchaseOrder_purchaseOrderLine" Member="purchaseOrder" ThisKey="docId" OtherKey="docId" Type="purchaseOrder" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_purchaseOrderLine" Member="unitOfMeasure" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+      <Association Name="unitOfMeasureOrg_purchaseOrderLine" Member="unitOfMeasureOrg" ThisKey="uomCodeOrg" OtherKey="uomCode" Type="unitOfMeasureOrg" IsForeignKey="true" />
+      <Association Name="item_purchaseOrderLine" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="Role_applicationAccess" Member="applicationAccesses" ThisKey="RoleId" OtherKey="roleId" Type="applicationAccess" />
+      <Association Name="Role_UsersInRole" Member="UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="UsersInRole" />
+      <Association Name="Application1_Role" Member="Application1" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="Application1" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.salesOrder" Member="salesOrders">
+    <Type Name="salesOrder">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="documentNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="docDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="customerReference" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="createDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="docStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="deliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="currencyCode" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="currencyRate" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="salesOrder_salesOrderLine" Member="salesOrderLines" ThisKey="docId" OtherKey="docId" Type="salesOrderLine" />
+      <Association Name="currency_salesOrder" Member="currency" ThisKey="currencyCode" OtherKey="currencyCode" Type="currency" IsForeignKey="true" />
+      <Association Name="company_salesOrder" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="docStatus_salesOrder" Member="docStatus" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="docStatus" IsForeignKey="true" />
+      <Association Name="document_salesOrder" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shoppingCart" Member="shoppingCarts">
+    <Type Name="shoppingCart">
+      <Column Name="userId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="applicationCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="application_shoppingCart" Member="application" ThisKey="applicationCode" OtherKey="applicationCode" Type="application" IsForeignKey="true" />
+      <Association Name="company_shoppingCart" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="User_shoppingCart" Member="User" ThisKey="userId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="item_shoppingCart" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stock" Member="stocks">
+    <Type Name="stock">
+      <Column Name="warehouseId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="stockAvailable" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="stockOnHand" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="avaragePrice" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Association Name="warehouse_stock" Member="warehouse" ThisKey="warehouseId" OtherKey="warehouseId" Type="warehouse" IsForeignKey="true" />
+      <Association Name="item_stock" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.translate" Member="translates">
+    <Type Name="translate">
+      <Column Name="translation" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="nameTable" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nameField" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="primaryKey" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageCode" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="language_translate" Member="language" ThisKey="languageCode" OtherKey="languageCode" Type="language" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.transport" Member="transports">
+    <Type Name="transport">
+      <Column Name="transportId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="startDateEstimated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="startDateActual" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="endDateEstimated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="endDateActual" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="transportTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="document_transport" Member="document" ThisKey="baseDocType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="transportType_transport" Member="transportType" ThisKey="transportTypeCode" OtherKey="transportTypeCode" Type="transportType" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_transport" Member="unitOfMeasure" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.transportProject" Member="transportProjects">
+    <Type Name="transportProject">
+      <Column Name="transportTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sequence" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="project_transportProject" Member="project" ThisKey="projectCode" OtherKey="projectCode" Type="project" IsForeignKey="true" />
+      <Association Name="transportType_transportProject" Member="transportType" ThisKey="transportTypeCode" OtherKey="transportTypeCode" Type="transportType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.transportType" Member="transportTypes">
+    <Type Name="transportType">
+      <Column Name="transportTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="transportType_transport" Member="transports" ThisKey="transportTypeCode" OtherKey="transportTypeCode" Type="transport" />
+      <Association Name="transportType_transportProject" Member="transportProjects" ThisKey="transportTypeCode" OtherKey="transportTypeCode" Type="transportProject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.unitOfMeasure" Member="unitOfMeasures">
+    <Type Name="unitOfMeasure">
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="uomName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="unitOfMeasure_colliLine" Member="colliLines" ThisKey="uomCode" OtherKey="uomCode1" Type="colliLine" />
+      <Association Name="unitOfMeasure_colliLine1" Member="colliLines1" ThisKey="uomCode" OtherKey="uomCode2" Type="colliLine" />
+      <Association Name="unitOfMeasure_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="uomCode" OtherKey="uomCode" Type="goodsReceiptLine" />
+      <Association Name="unitOfMeasure_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="uomCode" OtherKey="uomCode" Type="purchaseOrderLine" />
+      <Association Name="unitOfMeasure_transport" Member="transports" ThisKey="uomCode" OtherKey="uomCode" Type="transport" />
+      <Association Name="unitOfMeasure_unitOfMeasureLink" Member="unitOfMeasureLinks" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasureLink" />
+      <Association Name="unitOfMeasure_item" Member="items" ThisKey="uomCode" OtherKey="uomSale" Type="item" />
+      <Association Name="unitOfMeasure_salesOrderLine" Member="salesOrderLines" ThisKey="uomCode" OtherKey="uomCode" Type="salesOrderLine" />
+      <Association Name="unitOfMeasure_deliveryLine" Member="deliveryLines" ThisKey="uomCode" OtherKey="uomCode" Type="deliveryLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.unitOfMeasureLink" Member="unitOfMeasureLinks">
+    <Type Name="unitOfMeasureLink">
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="uomCodeOrg" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="unitOfMeasure_unitOfMeasureLink" Member="unitOfMeasure" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+      <Association Name="unitOfMeasureOrg_unitOfMeasureLink" Member="unitOfMeasureOrg" ThisKey="uomCodeOrg" OtherKey="uomCode" Type="unitOfMeasureOrg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.unitOfMeasureOrg" Member="unitOfMeasureOrgs">
+    <Type Name="unitOfMeasureOrg">
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="uomName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="unitOfMeasureOrg_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="uomCode" OtherKey="uomCodeOrg" Type="purchaseOrderLine" />
+      <Association Name="unitOfMeasureOrg_unitOfMeasureLink" Member="unitOfMeasureLinks" ThisKey="uomCode" OtherKey="uomCodeOrg" Type="unitOfMeasureLink" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_contactPerson" Member="contactPersons" ThisKey="UserId" OtherKey="userId" Type="contactPerson" />
+      <Association Name="User_Profile" Member="Profile" ThisKey="UserId" OtherKey="UserId" Type="Profile" Cardinality="One" />
+      <Association Name="User_shoppingCart" Member="shoppingCarts" ThisKey="UserId" OtherKey="userId" Type="shoppingCart" />
+      <Association Name="User_UsersInRole" Member="UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="UsersInRole" />
+      <Association Name="User_userRole" Member="userRoles" ThisKey="UserId" OtherKey="userId" Type="userRole" />
+      <Association Name="User_businessPartner" Member="businessPartners" ThisKey="UserId" OtherKey="accountManager" Type="businessPartner" />
+      <Association Name="User_userSetting" Member="userSetting" ThisKey="UserId" OtherKey="userId" Type="userSetting" Cardinality="One" />
+      <Association Name="Application1_User" Member="Application1" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="Application1" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsersInRoles" Member="UsersInRoles">
+    <Type Name="UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_UsersInRole" Member="Role" ThisKey="RoleId" OtherKey="RoleId" Type="Role" IsForeignKey="true" />
+      <Association Name="User_UsersInRole" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.batch" Member="batches">
+    <Type Name="batch">
+      <Column Name="batchId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="batchNumber" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="certificateLink" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="heatNumber" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ixosArchiveId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="certificateDescription" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="certificateIndexNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="batch_batchDocument" Member="batchDocuments" ThisKey="batchId" OtherKey="batchId" Type="batchDocument" />
+      <Association Name="batch_certificateDownloaded" Member="certificateDownloadeds" ThisKey="batchId" OtherKey="batchId" Type="certificateDownloaded" />
+      <Association Name="company_batch" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="item_batch" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.delivery" Member="deliveries">
+    <Type Name="delivery">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="documentNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="docDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="customerReference" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="createDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="docStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="deliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="currencyCode" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="currencyRate" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Association Name="delivery_deliveryLine" Member="deliveryLines" ThisKey="docId" OtherKey="docId" Type="deliveryLine" />
+      <Association Name="delivery_usageReport" Member="usageReports" ThisKey="docId" OtherKey="baseDocId" Type="usageReport" />
+      <Association Name="company_delivery" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="currency_delivery" Member="currency" ThisKey="currencyCode" OtherKey="currencyCode" Type="currency" IsForeignKey="true" />
+      <Association Name="docStatus_delivery" Member="docStatus" ThisKey="docStatusCode" OtherKey="docStatusCode" Type="docStatus" IsForeignKey="true" />
+      <Association Name="document_delivery" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="project_delivery" Member="project" ThisKey="projectCode" OtherKey="projectCode" Type="project" IsForeignKey="true" />
+      <Association Name="businessPartner_delivery" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_items" Member="vw_items">
+    <Type Name="vw_item">
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="itemCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="size" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="outsideDiameter1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="outsideDiameter2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="outsideDiameter3" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="wallThickness1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="wallThickness2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="specification" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="length" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="treatmentHeat" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="treatmentSurface" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ends" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="cdi" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="supplier" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="other" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="certificates" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="itemGroupName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="stockAvailable" Type="System.Decimal" DbType="Decimal(38,6) NOT NULL" CanBeNull="false" />
+      <Column Name="stockOnHand" Type="System.Decimal" DbType="Decimal(38,6)" CanBeNull="true" />
+      <Column Name="mAvPrice" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="grossPrice" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="companyName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="purchaseOpenQuantity" Type="System.Decimal" DbType="Decimal(38,6) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.declarationOfPermanceDocuments" Member="declarationOfPermanceDocuments">
+    <Type Name="declarationOfPermanceDocument">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOPLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_businessPartnerDocuments" Member="vw_businessPartnerDocuments">
+    <Type Name="vw_businessPartnerDocument">
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bpName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="DOPLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_BusinessPartnerDocumentsBusinessPartnerBusinessPartnerSearch" Member="vw_BusinessPartnerDocumentsBusinessPartnerBusinessPartnerSearches">
+    <Type Name="vw_BusinessPartnerDocumentsBusinessPartnerBusinessPartnerSearch">
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bpName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="DOPLink" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Expr1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="businessPartnerSearchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Expr2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="searchString" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.businessPartnerSearch" Member="businessPartnerSearches">
+    <Type Name="businessPartnerSearch">
+      <Column Name="businessPartnerSearchID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="searchString" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="businessPartner_businessPartnerSearch" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userRole" Member="userRoles">
+    <Type Name="userRole">
+      <Column Name="userRoleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="roleCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="projectCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="applicationRole_userRole" Member="applicationRole" ThisKey="roleCode" OtherKey="roleCode" Type="applicationRole" IsForeignKey="true" />
+      <Association Name="project_userRole" Member="project" ThisKey="projectCode" OtherKey="projectCode" Type="project" IsForeignKey="true" />
+      <Association Name="User_userRole" Member="User" ThisKey="userId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_name_in_users" Member="vw_name_in_users">
+    <Type Name="vw_name_in_user">
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.businessPartner" Member="businessPartners">
+    <Type Name="businessPartner">
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="bpName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="bpCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="countryCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="bpType" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="companyGroupCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="defaultContactPersonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="languageCode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="accountManager" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="isMother" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="bpMother" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="businessPartner_contactPerson" Member="contactPersons" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="contactPerson" />
+      <Association Name="businessPartner_goodsReceipt" Member="goodsReceipts" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="goodsReceipt" />
+      <Association Name="businessPartner_project" Member="projects" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="project" />
+      <Association Name="businessPartner_purchaseOrder" Member="purchaseOrders" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="purchaseOrder" />
+      <Association Name="businessPartner_delivery" Member="deliveries" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="delivery" />
+      <Association Name="businessPartner_businessPartnerSearch" Member="businessPartnerSearches" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartnerSearch" />
+      <Association Name="businessPartner_businessPartner" Member="businessPartners" ThisKey="businessPartnerId" OtherKey="bpMother" Type="businessPartner" />
+      <Association Name="businessPartner_certificateBundle" Member="certificateBundles" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="certificateBundle" />
+      <Association Name="businessPartner_businessPartnerApplication" Member="businessPartnerApplications" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartnerApplication" />
+      <Association Name="businessPartner_usageReport" Member="usageReports" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="usageReport" />
+      <Association Name="businessPartner_businessPartner" Member="businessPartner1" ThisKey="bpMother" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+      <Association Name="company_businessPartner" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="companyGroup_businessPartner" Member="companyGroup" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="companyGroup" IsForeignKey="true" />
+      <Association Name="contactPerson_businessPartner" Member="contactPerson" ThisKey="defaultContactPersonId" OtherKey="contactPersonId" Type="contactPerson" IsForeignKey="true" />
+      <Association Name="country_businessPartner" Member="country" ThisKey="countryCode" OtherKey="countryCode" Type="country" IsForeignKey="true" />
+      <Association Name="language_businessPartner" Member="language" ThisKey="languageCode" OtherKey="languageCode" Type="language" IsForeignKey="true" />
+      <Association Name="User_businessPartner" Member="User" ThisKey="accountManager" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.certificateDownloaded" Member="certificateDownloadeds">
+    <Type Name="certificateDownloaded">
+      <Column Name="certificateDownloadedId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="batchId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="contactPersonId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="batch_certificateDownloaded" Member="batch" ThisKey="batchId" OtherKey="batchId" Type="batch" IsForeignKey="true" />
+      <Association Name="company_certificateDownloaded" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="contactPerson_certificateDownloaded" Member="contactPerson" ThisKey="contactPersonId" OtherKey="contactPersonId" Type="contactPerson" IsForeignKey="true" />
+      <Association Name="document_certificateDownloaded" Member="document" ThisKey="baseDocType" OtherKey="docType" Type="document" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.certificateModel" Member="certificateModels">
+    <Type Name="certificateModel">
+      <Column Name="modelId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.certificateBundle" Member="certificateBundles">
+    <Type Name="certificateBundle">
+      <Column Name="certificateBundleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="modelId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="expireDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="previousCertQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="orderedCertQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="actualCertQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="usedCertQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="certificatePrice" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="businessPartner_certificateBundle" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userSetting" Member="userSettings">
+    <Type Name="userSetting">
+      <Column Name="userId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="defaultCultureCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="siteAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="userSetting_applicationAccess" Member="applicationAccesses" ThisKey="userId" OtherKey="userId" Type="applicationAccess" />
+      <Association Name="User_userSetting" Member="User" ThisKey="userId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="company_userSetting" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.businessPartnerApplication" Member="businessPartnerApplications">
+    <Type Name="businessPartnerApplication">
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="applicationCode" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="application_businessPartnerApplication" Member="application" ThisKey="applicationCode" OtherKey="applicationCode" Type="application" IsForeignKey="true" />
+      <Association Name="businessPartner_businessPartnerApplication" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.item" Member="items">
+    <Type Name="item">
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="itemGroupCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="itemCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="companyGroupCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="grade" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="size" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6)" CanBeNull="true" />
+      <Column Name="timeStampCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeStampLastUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="uomSale" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hsNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CertificateType" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Association Name="item_goodsReceiptLine" Member="goodsReceiptLines" ThisKey="itemId" OtherKey="itemId" Type="goodsReceiptLine" />
+      <Association Name="item_itemVLunar" Member="itemVLunars" ThisKey="itemId" OtherKey="itemId" Type="itemVLunar" />
+      <Association Name="item_priceItem" Member="priceItems" ThisKey="itemId" OtherKey="itemId" Type="priceItem" />
+      <Association Name="item_purchaseOrderLine" Member="purchaseOrderLines" ThisKey="itemId" OtherKey="itemId" Type="purchaseOrderLine" />
+      <Association Name="item_shoppingCart" Member="shoppingCarts" ThisKey="itemId" OtherKey="itemId" Type="shoppingCart" />
+      <Association Name="item_stock" Member="stocks" ThisKey="itemId" OtherKey="itemId" Type="stock" />
+      <Association Name="item_batch" Member="batches" ThisKey="itemId" OtherKey="itemId" Type="batch" />
+      <Association Name="item_salesOrderLine" Member="salesOrderLines" ThisKey="itemId" OtherKey="itemId" Type="salesOrderLine" />
+      <Association Name="item_deliveryLine" Member="deliveryLines" ThisKey="itemId" OtherKey="itemId" Type="deliveryLine" />
+      <Association Name="company_item" Member="company" ThisKey="companyCode" OtherKey="companyCode" Type="company" IsForeignKey="true" />
+      <Association Name="companyGroup_item" Member="companyGroup" ThisKey="companyGroupCode" OtherKey="companyGroupCode" Type="companyGroup" IsForeignKey="true" />
+      <Association Name="itemGroup_item" Member="itemGroup" ThisKey="itemGroupCode" OtherKey="itemGroupCode" Type="itemGroup" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_item" Member="unitOfMeasure" ThisKey="uomSale" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.salesOrderLine" Member="salesOrderLines">
+    <Type Name="salesOrderLine">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="openQuantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCodeOrg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="lineTotal" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="customerReference" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="deliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lineStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="lineTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="customerItemCode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="certOrdered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="itemDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="document_salesOrderLine" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="item_salesOrderLine" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+      <Association Name="lineStatus_salesOrderLine" Member="lineStatus" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="lineStatus" IsForeignKey="true" />
+      <Association Name="lineType_salesOrderLine" Member="lineType" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="lineType" IsForeignKey="true" />
+      <Association Name="salesOrder_salesOrderLine" Member="salesOrder" ThisKey="docId" OtherKey="docId" Type="salesOrder" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_salesOrderLine" Member="unitOfMeasure" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.deliveryLine" Member="deliveryLines">
+    <Type Name="deliveryLine">
+      <Column Name="docId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lineNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="itemId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="openQuantity" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="uomCodeOrg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="weight" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="lineTotal" Type="System.Decimal" DbType="Decimal(20,6) NOT NULL" CanBeNull="false" />
+      <Column Name="customerReference" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="deliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lineTypeCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lineStatusCode" Type="System.String" DbType="NVarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="docType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="customerItemCode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="certOrdered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="itemDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="deliveryLine_colliLine" Member="colliLines" ThisKey="docId,lineNum" OtherKey="baseDocId,baseLineNum" Type="colliLine" />
+      <Association Name="delivery_deliveryLine" Member="delivery" ThisKey="docId" OtherKey="docId" Type="delivery" IsForeignKey="true" />
+      <Association Name="document_deliveryLine" Member="document" ThisKey="docType" OtherKey="docType" Type="document" IsForeignKey="true" />
+      <Association Name="item_deliveryLine" Member="item" ThisKey="itemId" OtherKey="itemId" Type="item" IsForeignKey="true" />
+      <Association Name="lineStatus_deliveryLine" Member="lineStatus" ThisKey="lineStatusCode" OtherKey="lineStatusCode" Type="lineStatus" IsForeignKey="true" />
+      <Association Name="lineType_deliveryLine" Member="lineType" ThisKey="lineTypeCode" OtherKey="lineTypeCode" Type="lineType" IsForeignKey="true" />
+      <Association Name="unitOfMeasure_deliveryLine" Member="unitOfMeasure" ThisKey="uomCode" OtherKey="uomCode" Type="unitOfMeasure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.usageReport" Member="usageReports">
+    <Type Name="usageReport">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="savedMark" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="heatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="contactPersonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="businessPartnerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="batchId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="baseDocId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseLineNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="baseDocType" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Association Name="delivery_usageReport" Member="delivery" ThisKey="baseDocId" OtherKey="docId" Type="delivery" IsForeignKey="true" />
+      <Association Name="businessPartner_usageReport" Member="businessPartner" ThisKey="businessPartnerId" OtherKey="businessPartnerId" Type="businessPartner" IsForeignKey="true" />
+      <Association Name="contactPerson_usageReport" Member="contactPerson" ThisKey="contactPersonId" OtherKey="contactPersonId" Type="contactPerson" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_DeliveryLines" Member="vw_DeliveryLines">
+    <Type Name="vw_DeliveryLine">
+      <Column Name="CardCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SODocNum" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SOLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DELDocNum" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DELLineNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DELDocDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="customerReference" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SOLineReference" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="itemCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="itemDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="HeatNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CertificateLink" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="batchId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="companyCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DELDocId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DELDocType" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="bpName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="certOrdered" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

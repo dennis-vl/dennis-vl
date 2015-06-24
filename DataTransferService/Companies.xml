@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <companies>
+    <company>
+      <databasename>SBO_SAPECC6_PROD</databasename>
+      <xmloutboxpath>D:\Test\Inbox\SBO_SAPECC6_PROD</xmloutboxpath>
+    </company>
+  </companies>
+</Settings>

@@ -1,0 +1,166 @@
+﻿* {
+    color: #444;
+    font-family: Verdana, Arial, Tahoma sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+header#mainHeader {
+    display: block;
+    height: 90px;
+    width: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+div#portalTitle {
+    float: left;
+    font-size: 24px;
+    margin: 0px 15px 0px 35px;
+    line-height: 90px;
+}
+
+div#redBar {
+    height: 60px;
+    width: 100%;
+    background-color: #A8052C;
+    clear: both;
+}
+
+div#divLanguage {
+    float: left;
+    margin-left: 20px;
+    padding-top: 11px;
+    font-size: 12px;
+}
+
+div#loginBox {
+    float: right;
+    margin-right: 0px;
+    line-height: 45px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+div#loginBox a:link {
+    text-decoration: none;
+}
+
+div#content {
+    padding: 10px 25px 0px 25px;
+}
+
+#loginSection {
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    margin: 10px 0px 10px -300px;
+}
+
+div#loginRememberMe {
+    margin: 10px 0px 5px 0px;
+}
+
+div.textDivWithTopBorder {
+    padding-top: 4px;
+    border-top: 1px solid #A7A9AC;
+    margin-bottom: 20px;
+}
+
+table#filterGridTable {
+    margin:5px 10px 5px 25px;
+}
+
+table#filterGridTable td {
+    padding-right: 15px;
+}
+
+div#gridButtonsDiv {
+    margin: 5px 10px 10px 0px;
+}
+
+section#forgotPasswordSection {
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    margin: 10px 0px 10px -300px;
+}
+
+table#forgotPasswordTable {
+    margin-top: 10px;
+}
+
+div#forgotPasswordDiv {
+    margin-top: 10px;
+}
+
+p#forgotPasswordUsernameNotFound {
+    color: red;
+}
+
+p#forgotPasswordRequestSuccesfull {
+    color: green;
+}
+
+div#registrationIntroText {
+    margin: 10px 0px 20px 2px;
+}
+
+#registrationTable {
+    border-spacing: 8px;
+}
+
+span.requiredRegistrationFieldMarker {
+    color: #FF99FF;
+}
+
+#manageSection {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin: 10px 0px 10px -400px;
+}
+
+table#manageTable {
+    margin: 15px 0px 15px 0px;
+}
+
+td.manageTdWidth {
+    width: 190px;
+}
+
+div#itemDetailItem {
+    float:left;
+}
+
+div#itemDetailPurchase {
+    clear: both;
+}
+
+/* toolbox components */
+#ImageVanLeeuwenLogo {
+    float: right;
+    margin: 22px 40px 0px 0px;
+    height: 56px;
+}
+
+
+.hiddencol
+{
+    display:none;
+}
+.viscol
+{
+    display:block;
+}
+.floatRight
+{
+    float:right;
+    margin-right: 10px;
+}

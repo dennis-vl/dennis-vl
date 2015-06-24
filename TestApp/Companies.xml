@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <companies>
+    <company>
+      <databasename>SAPECC6</databasename>
+      <xmloutboxpath>D:\Test\SAPECC6</xmloutboxpath>
+    </company>
+  </companies>
+</Settings>

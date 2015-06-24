@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="VanLeeuwen.Projects.WebPortal.WebServices.CertificateService" CodeBehind="CertificateService.svc.cs" %>
